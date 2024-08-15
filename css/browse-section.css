@@ -1,0 +1,85 @@
+/* Estilos padrões para a seção */
+.browse-style-container {
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.browse-style {
+  background-color: #F0F0F0;
+  border-radius: 15px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.browse-style h1 {
+  font-family: "Integral CF";
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.browse-style-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.top-row, .bottom-row {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.top-row img, .bottom-row img {
+  border-radius: 10px;
+  box-sizing: border-box;
+  object-fit: cover; /* Garante que a imagem cubra o contêiner */
+}
+
+/* Ajustes específicos */
+.img-top-1, .img-top-2, .img-bottom-1, .img-bottom-2 {
+  width: 100%; /* Ocupa 100% da largura disponível */
+  height: 300px; /* Defina a altura desejada */
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+  .browse-style {
+    padding: 20px;
+  }
+
+  .browse-style > h1{
+    font-size: 2rem;
+  }
+  .browse-style-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .top-row, .bottom-row {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .img-top-1, .img-top-2, .img-bottom-1, .img-bottom-2 {
+    width: 100%; /* Faz com que as imagens ocupem toda a largura disponível */
+    height: 150px; /* Define a mesma altura para todas as imagens */
+    max-width: none; /* Remove a restrição de tamanho máximo */
+  }
+}

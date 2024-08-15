@@ -1,0 +1,216 @@
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Permite quebra de linha quando necessário */
+  padding-bottom: 20px;
+  padding-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o conteúdo */
+  gap: 20px; /* Espaço uniforme entre as colunas */
+}
+
+.brand-section {
+  flex: 1 1 30%; /* Ajusta para ocupar menos espaço */
+  min-width: 250px; /* Define um tamanho mínimo para a seção */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Alinha verticalmente o conteúdo */
+}
+
+.brand-section h1 {
+  font-family: "Integral CF", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.brand-section h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4; /* Ajusta o espaçamento entre linhas */
+  margin-bottom: 20px;
+  color: #00000099;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limita o texto a 3 linhas */
+}
+
+.social-medias {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-container-links {
+  flex: 1 1 65%; /* Ajusta para ocupar o espaço restante */
+  display: flex;
+  flex-direction: row; /* Alinha horizontalmente os itens */
+  flex-wrap: nowrap; /* Impede a quebra para a linha seguinte */
+  gap: 20px; /* Espaço uniforme entre os itens */
+}
+
+.container-links-1, 
+.container-links-2, 
+.container-links-3, 
+.container-links-4 {
+  flex: 1; /* Ajusta os itens para se distribuírem uniformemente */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+.footer-container-links h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-container-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container-links li {
+  margin-bottom: 10px;
+  color: #00000099;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #dcdcdc;
+  margin: 20px 0;
+}
+
+.footer-container-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.footer-container-cards h6 {
+  font-size: 0.7rem;
+  font-family: "Satoshi", sans-serif;
+  margin: 0;
+  color: #00000099;
+  font-weight: 400;
+}
+
+.footer-container-cards-images {
+  display: flex;
+  gap: 0; /* Espaço entre as imagens */
+  justify-content: flex-end; /* Alinha as imagens à direita */
+  align-items: center;
+}
+
+.footer-container-cards-images a {
+  margin: 0; /* Remove a margem ao redor das imagens */
+  padding: 0; /* Remove o preenchimento ao redor das imagens */
+}
+
+.footer-container-cards-images img {
+  width: 50px; /* Tamanho das imagens */
+  height: 50px;
+  object-fit: contain; /* Mantém a proporção das imagens */
+  margin: 0; /* Remove a margem ao redor das imagens */
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Muda o layout para coluna para melhor organização em telas pequenas */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    gap: 30px; /* Espaço entre as seções do footer */
+    padding: 20px; /* Ajusta o padding geral */
+  }
+
+  .brand-section {
+    flex: none; /* Remove a flexível para garantir que o conteúdo ocupe o espaço necessário */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 30px; /* Espaço abaixo da seção */
+    width: 100%; /* Garante que a seção ocupe toda a largura disponível */
+    max-width: 600px; /* Define um máximo para a largura da seção */
+  }
+
+  .brand-section h1 {
+    font-size: 1.5rem; /* Ajusta o tamanho da fonte do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+  }
+
+  .brand-section h2 {
+    font-size: 1rem; /* Ajusta o tamanho da fonte para telas pequenas */
+    margin-bottom: 15px; /* Espaço abaixo do texto */
+    line-height: 1.5; /* Ajusta o espaçamento entre linhas */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block; /* Garante que o texto se comporte como bloco e ocupe o espaço disponível */
+  }
+
+  .social-medias {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px; /* Espaço acima das redes sociais */
+  }
+
+  .footer-container-links {
+    flex: 1 1 70%; /* Permite que a seção ocupe o espaço disponível, ajustando o espaço relativo */
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    gap: 20px; /* Adiciona espaço uniforme entre as subseções */
+  }
+  
+  .container-links-1, .container-links-2, .container-links-3, .container-links-4 {
+    flex: 1 1 calc(50% - 20px); /* Define a largura para que dois itens se ajustem por linha com espaçamento */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+  }
+  
+  .footer-container-links h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-container-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-container-links li {
+    margin-bottom: 10px;
+    color: #00000099;
+  }
+  
+
+  .footer-container-cards {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .footer-container-cards h6 {
+    font-size: 0.7rem;
+    font-family: "Satoshi", sans-serif;
+    margin: 0;
+    color: #00000099;
+    font-weight: 400;
+  }
+  
+  .footer-container-cards-images {
+    display: flex;
+    gap: 10px; /* Espaço entre as imagens */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center;
+  }
+  
+  .footer-container-cards-images a {
+    margin: 0; /* Remove a margem ao redor das imagens */
+    padding: 0; /* Remove o preenchimento ao redor das imagens */
+  }
+  
+  .footer-container-cards-images img {
+    width: 50px; /* Tamanho das imagens */
+    height: 50px;
+    object-fit: contain; /* Mantém a proporção das imagens */
+    margin: 0; /* Remove a margem ao redor das imagens */
+  }
+}

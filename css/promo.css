@@ -1,0 +1,71 @@
+.promo {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0; /* Adiciona algum espaçamento vertical */
+  }
+  
+  .promo-container {
+    max-width: 1440px; /* Define a largura máxima igual à da .main */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0 6.5rem; /* Adiciona espaçamento lateral para não ficar grudado nas bordas */
+    box-sizing: border-box;
+    position: relative; /* Necessário para o posicionamento absoluto do span */
+  }
+  
+  .promo-content {
+    display: flex;
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+    width: 100%; /* Ocupa toda a largura disponível da .promo-container */
+    position: relative; /* Permite posicionar o span no final */
+  }
+  
+  .promo-content h2 {
+    font-family: "Satoshi";
+    font-weight: 400;
+    margin: 0; /* Remove margens para ajustar o alinhamento */
+    font-size: 1rem; /* Ajusta o tamanho da fonte conforme necessário */
+    text-align: center; /* Centraliza o texto dentro do h2 */
+    flex: 1; /* Permite que o h2 se expanda e se ajuste */
+    margin-right: 70px; /* Ajuste o valor conforme necessário para aumentar a distância do span */
+  }
+  
+  .promo-content a {
+    color: #ffffff; /* Cor para o link dentro do h2 */
+    text-decoration: underline; /* Sublinha o link para destacá-lo */
+  }
+  
+  .promo-content span {
+    font-size: 1rem; /* Ajusta o tamanho do X conforme necessário */
+    cursor: pointer; /* Adiciona um cursor pointer para indicar que é clicável */
+    border-radius: 50%; /* Faz o span ficar circular */
+    width: 30px; /* Ajusta a largura do span */
+    height: 30px; /* Ajusta a altura do span */
+    display: flex;
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    position: absolute; /* Posiciona o span fora do fluxo normal do layout */
+    right: 20px; /* Alinha o span com o ícone de login do header (ajuste conforme necessário) */
+  }
+  
+
+  /* Ajustes para a seção .promo em telas pequenas com max-width de 390px */
+  @media (max-width: 768px) {
+    .promo-container {
+        padding: 0 1rem; /* Reduz o espaçamento lateral para 1rem */
+    }
+
+    .promo-content {
+        justify-content: center; /* Centraliza o conteúdo dentro da .promo-content */
+    }
+
+    .promo-content h2 {
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+
+    .promo-content span {
+        display: none; /* Esconde o span */
+    }
+}

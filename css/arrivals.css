@@ -26,10 +26,17 @@
 }
 
 /* Estilo para os cards */
-.card {
+.card-1, .card-2, .card-3, .card-4 {
   width: 220px;
   padding: 20px;
   margin: 0; /* Remove a margem para encostar os cards nas bordas laterais */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Estilo para a imagem dentro dos cards */

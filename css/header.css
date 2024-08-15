@@ -23,6 +23,11 @@ nav {
   box-sizing: border-box; /* Inclui padding na largura total */
 }
 
+.header-container .nav-links li a[href="#Shop"] span img {
+  vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+
+}
+
 /* Ajuste no logo */
 .logo {
   font-family: "Integral CF";

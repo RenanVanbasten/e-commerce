@@ -92,6 +92,10 @@
   text-align: left; /* Garante que o texto dentro da mensagem esteja alinhado à esquerda */
 }
 
+.cards-1 h2 img, .cards-2 h2 img, .cards-3 h2 img {
+  vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+}
+
 /* Ajuste para garantir que todos os 3 cards apareçam */
 .carousel {
   display: flex;

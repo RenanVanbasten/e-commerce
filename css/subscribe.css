@@ -88,7 +88,7 @@
         display: flex;
         flex-direction: column; /* Mantém input e botão um abaixo do outro */
         align-items: center; /* Centraliza os itens */
-        gap: 30px; /* Espaço entre o campo de entrada e o botão */
+        gap: 5px; /* Espaço entre o campo de entrada e o botão */
         width: 100%; /* Ocupa a largura total disponível */
         padding-right: 0; /* Remove o padding direito */
     }

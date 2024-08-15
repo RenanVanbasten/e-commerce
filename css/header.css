@@ -88,8 +88,7 @@ input {
 }
 
 @media (max-width: 768px) {
-  .nav-links,
-  input {
+  #input-header {
     display: none; /* Esconde promo, nav-links e input em telas pequenas */
   }
 

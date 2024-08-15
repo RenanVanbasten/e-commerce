@@ -99,6 +99,7 @@
   align-items: flex-start; /* Alinha os itens ao topo */
 }
 
+
 /* Media Query para telas menores */
 @media (max-width: 768px) {
   .depoimentos {

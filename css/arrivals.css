@@ -119,6 +119,13 @@ button:hover {
   background-color: #9da8b5; /* Cor de fundo quando o botão é hover */
 }
 
+.section-separator {
+  border: none;
+  border-top: 1px solid #ccc; /* Linha fina e cinza claro */
+  margin: 0; /* Espaçamento acima e abaixo da linha */
+}
+
+
 @media (max-width: 768px) {
   /* Ajusta o contêiner da seção new-arrivals */
   .new-arrivals {
@@ -143,17 +150,14 @@ button:hover {
     gap: 20px; /* Espaçamento entre os cards */
   }
 
-  /* Exibe apenas card-1 e card-2 */
-  .card-3,
-  .card-4 {
-    display: none; /* Oculta os cards 3 e 4 */
-  }
-
-  /* Ajusta o estilo dos cards visíveis */
-  .card-1,
-  .card-2 {
+  /* Exibe apenas os primeiros dois cards */
+  .card {
     flex: 1 1 calc(50% - 20px); /* Ajusta a largura para dois cards por linha */
     max-width: 220px; /* Define a largura máxima para cada card */
+  }
+
+  .card-hidden {
+    display: none; /* Oculta todos os cards adicionais */
   }
 
   /* Ajusta o botão "View All" para ocupar 100% da largura disponível */

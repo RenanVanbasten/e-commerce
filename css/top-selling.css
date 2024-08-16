@@ -163,17 +163,14 @@ button:hover {
     gap: 20px; /* Espaçamento entre os cards */
   }
 
-  .card-1,
-  .card-2 {
-    width: calc(
-      50% - 10px
-    ); /* Define a largura dos cards para metade da largura do contêiner menos a margem */
+  .card {
+    width: calc(50% - 20px); /* Define a largura dos cards para metade da largura do contêiner menos a margem */
     margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
   }
 
-  .card-3,
-  .card-4 {
-    display: none; /* Oculta os cards 3 e 4 em telas pequenas */
+  /* Exibe apenas os primeiros dois cards */
+  .card-hidden {
+    display: none; /* Oculta todos os cards adicionais */
   }
 
   .top-selling button {

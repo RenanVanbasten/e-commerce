@@ -5,27 +5,26 @@
 }
 
 .header-container {
-  max-width: 1440px; /* Define a largura máxima igual à da .main */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 10px 0; /* Adiciona um pouco de espaçamento acima e abaixo */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
 /* Estilo do nav */
 nav {
-  max-width: 1200px; /* Define a largura máxima do conteúdo do nav */
-  margin: 0 auto; /* Centraliza o nav horizontalmente dentro da .header-container */
+  max-width: 1200px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between; /* Espaça uniformemente os itens dentro do nav */
-  align-items: center; /* Alinha verticalmente o conteúdo */
-  width: 100%; /* Ocupa toda a largura disponível */
-  padding: 0; /* Remove padding lateral */
-  box-sizing: border-box; /* Inclui padding na largura total */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header-container .nav-links li a[href="#Shop"] span img {
-  vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
-
+  vertical-align: middle;
 }
 
 /* Ajuste no logo */
@@ -33,35 +32,66 @@ nav {
   font-family: "Integral CF";
   font-size: 1.5rem;
   font-weight: bold;
-  color: black; /* Cor do texto do logo */
-  margin-left: 0; /* Remove qualquer margem à esquerda do logo */
+  color: black;
+  margin-left: 0;
 }
 
 /* Estilo para o menu-toggle e search-toggle (se necessário) */
 .menu-toggle,
 .search-toggle {
-  display: none; /* Inicialmente oculto */
+  display: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Adicionando hover no menu-toggle */
+.menu-toggle:hover {
+  background-color: #f0f0f0;
 }
 
 /* Estilo para links de navegação */
 .nav-links {
   list-style: none;
-  display: flex; /* Alinha os itens horizontalmente */
-  flex-direction: row; /* Alinha os itens horizontalmente */
+  display: flex;
+  flex-direction: row;
   font-family: "Satoshi";
   margin: 0;
   padding: 0;
-  flex: 1; /* Ocupa o espaço restante entre a logo e os ícones */
-  justify-content: center; /* Centraliza os links */
+  flex: 1;
+  justify-content: center;
 }
 
 .nav-links a {
-  color: black; /* Cor dos links de navegação */
-  font-size: 14px; /* Ajusta o tamanho da fonte dos links para garantir que não quebre linha */
+  color: black;
+  font-size: 14px;
   font-weight: 400;
-  padding: 0 15px; /* Espaçamento lateral dos links */
-  text-decoration: none; /* Remove sublinhado dos links */
-  white-space: nowrap; /* Garante que o texto não quebre linha */
+  padding: 5px 10px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilo dos ícones e links */
+.img-nav a,
+.modal-nav-links a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Efeito de hover no background dos ícones e texto */
+.img-nav a:hover,
+.nav-links a:hover,
+.modal-nav-links a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Mantém a cor do texto original ao passar o mouse */
+.modal-nav-links a:hover {
+  color: black;
 }
 
 input {
@@ -77,59 +107,105 @@ input {
 }
 
 .img-nav {
-  display: flex; /* Usa flexbox para alinhar itens */
-  align-items: center; /* Alinha verticalmente os itens */
-  gap: 10px; /* Espaçamento reduzido entre os ícones */
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Ajuste para o search-toggle e ícones de navegação */
 .img-nav a {
-  margin-right: 10px; /* Remove margem adicional dos ícones */
+  margin-right: 10px;
 }
 
-/* Estilo para ícones específicos */
-.img-nav a img {
-  display: block;
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: left; /* Alinha o conteúdo à esquerda */
+}
+
+.modal-nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-nav-links li {
+  margin: 10px 0;
+}
+
+.modal-nav-links a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-nav-links a img {
+  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
+
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .nav-links, #input-header {
-    display: none; /* Esconde promo, nav-links e input em telas pequenas */
+    display: none;
   }
 
   .menu-toggle,
   .search-toggle,
   .img-nav a {
-    display: block; /* Exibe menu-toggle e search-toggle em telas pequenas */
+    display: block;
   }
 
   nav {
-    padding: 0 20px; /* Espaçamento lateral */
-    justify-content: space-between; /* Espaça a logo e os ícones */
+    padding: 0 20px;
+    justify-content: space-between;
   }
 
   .logo {
-    margin-right: 20px; /* Mantém o espaço entre a logo e o menu-toggle */
+    margin-right: 20px;
   }
 
   .menu-toggle {
     display: block;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   .search-toggle {
-    display: block; /* Exibe search-toggle em telas pequenas */
-    margin-right: 30px;
+    display: block;
+    margin-right: 20px;
   }
 
   .img-nav {
-    display: flex; /* Usa flexbox para alinhar itens */
-    align-items: center; /* Alinha verticalmente os itens */
-    margin-left: auto; /* Empurra os ícones para o lado direito */
-    gap: 10px; /* Espaçamento reduzido entre os ícones */
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 5px; /* Diminui o espaçamento entre os ícones */
   }
 
   .img-nav a {
-    margin-right: 10px; /* Remove margem adicional dos ícones */
+    margin-right: 5px; /* Diminui o espaço adicional dos ícones */
   }
 }

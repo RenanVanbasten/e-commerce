@@ -1,168 +1,104 @@
-/* Estilo para a seção new-arrivals */
-.new-arrivals {
-  width: 100%;
+/* Estilos padrões para a seção */
+.browse-style-container {
   background-color: white;
-  padding: 20px;
-  text-align: center; /* Garante que todo o texto dentro da seção esteja centralizado */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
-/* Estilo do título na seção new-arrivals */
-.new-arrivals h1 {
+.browse-style {
+  background-color: #F0F0F0;
+  border-radius: 15px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.browse-style h1 {
   font-family: "Integral CF";
   font-size: 2.5rem;
   margin-bottom: 40px;
-}
-
-/* Container de cards */
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Ajuste o espaço entre os cards conforme necessário */
-}
-
-/* Cada card */
-.card {
-  flex: 1 1 calc(25% - 20px); /* Ajuste a largura dos cards conforme necessário */
-  box-sizing: border-box;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para o zoom */
-  overflow: hidden; /* Garante que o conteúdo do card não ultrapasse os limites */
-  background-color: #fff; /* Adiciona cor de fundo para os cards */
-  border-radius: 10px; /* Adiciona bordas arredondadas aos cards */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos cards */
-}
-
-/* Efeito de hover para zoom */
-.card:hover {
-  transform: scale(1.05); /* Ajuste o nível de zoom conforme necessário */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para realçar o efeito de zoom */
-}
-
-/* CSS para ocultar cards adicionais inicialmente */
-.card-hidden {
-  display: none;
-}
-
-/* CSS para mostrar os cards adicionais */
-.card-visible {
-  display: block;
-}
-
-/* Garantir que a imagem se ajuste corretamente dentro do card */
-.card-image img {
-  width: 100%;
-  height: auto;
-  display: block; /* Remove espaçamento abaixo da imagem */
-}
-
-/* Garantir que o conteúdo do card fique bem posicionado */
-.card-content {
-  padding: 15px;
   text-align: center;
+  padding: 1rem;
 }
 
-.product-name {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+.browse-style-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
 
-.rating {
-  margin-bottom: 10px;
+.top-row, .bottom-row {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.stars {
-  color: #ffd700; /* Cor das estrelas */
+.top-row img {
+  border-radius: 20px;
+  object-fit: cover;
 }
 
-.rating-number {
-  font-size: 0.9em;
-  color: #666;
+.bottom-row img {
+  border-radius: 20px;
+  object-fit: cover;
 }
 
-.price {
-  font-size: 1.1em;
+/* Tamanhos específicos para as imagens */
+.img-top-1 {
+  width: 407px; /* Tamanho específico para a imagem top 1 */
+  height: 289px;
 }
 
-.current-price {
-  color: #333;
-  font-weight: bold;
+.img-top-2 {
+  width: 684px; /* Tamanho específico para a imagem top 2 */
+  height: 289px;
 }
 
-.old-price {
-  color: #888;
-  text-decoration: line-through;
-  margin-left: 10px;
+.img-bottom-1 {
+  width: 684px; /* Tamanho específico para a imagem bottom 1 */
+  height: 289px;
 }
 
-.discount {
-  color: #e74c3c; /* Cor para o desconto */
-  margin-left: 10px;
+.img-bottom-2 {
+  width: 407px; /* Tamanho específico para a imagem bottom 2 */
+  height: 289px;
 }
 
-/* Manter o estilo original do botão */
-.new-arrivals button {
-  width: 10%;
-  background-color: white; /* Cor de fundo branca */
-  border: 1px solid #ccc; /* Borda fina e cinza claro */
-  border-radius: 30px; /* Borda arredondada para melhor aparência */
-  padding: 10px 20px; /* Adiciona preenchimento interno */
-  font-size: 1rem; /* Tamanho da fonte */
-  color: black; /* Cor do texto */
-  cursor: pointer; /* Altera o cursor para indicar que é clicável */
-  margin-top: 20px; /* Espaçamento acima do botão */
-  display: inline-block; /* Faz o botão se ajustar ao conteúdo e se comportar como um bloco */
-  text-align: center; /* Centraliza o texto dentro do botão */
-  font-family: "Satoshi";
-  transition: background-color 0.4s ease;
-}
-
-button:hover {
-  background-color: #9da8b5; /* Cor de fundo quando o botão é hover */
-}
-
-.section-separator {
-  border: none;
-  border-top: 1px solid #ccc; /* Linha fina e cinza claro */
-  margin: 0; /* Espaçamento acima e abaixo da linha */
-}
-
-
+/* Media Query para telas menores */
 @media (max-width: 768px) {
-  /* Ajusta o contêiner da seção new-arrivals */
-  .new-arrivals {
-    max-width: 768px; /* Define a largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px; /* Garante o espaçamento interno */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
-    text-align: center; /* Centraliza o texto no contêiner da seção */
+  .browse-style {
+    padding: 20px;
   }
 
-  /* Centraliza o título */
-  .new-arrivals h1 {
-    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
-    margin-bottom: 20px; /* Ajusta o espaço abaixo do título */
+  .browse-style > h1{
+    font-size: 2rem;
+  }
+  .browse-style-grid {
+    flex-direction: column;
+    gap: 10px;
   }
 
-  /* Ajusta o contêiner dos cards para exibir apenas dois cards por vez */
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 20px; /* Espaçamento entre os cards */
+  .top-row, .bottom-row {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
   }
 
-  /* Exibe apenas os primeiros dois cards */
-  .card {
-    flex: 1 1 calc(50% - 20px); /* Ajusta a largura para dois cards por linha */
-    max-width: 220px; /* Define a largura máxima para cada card */
-  }
-
-  .card-hidden {
-    display: none; /* Oculta todos os cards adicionais */
-  }
-
-  /* Ajusta o botão "View All" para ocupar 100% da largura disponível */
-  .new-arrivals button {
-    width: 100%; /* Faz o botão ocupar toda a largura disponível */
-    margin-top: 20px; /* Espaçamento acima do botão */
+  .img-top-1, .img-top-2, .img-bottom-1, .img-bottom-2 {
+    width: 100%; /* Faz com que as imagens ocupem toda a largura disponível */
+    height: 150px; /* Define a mesma altura para todas as imagens */
+    max-width: none; /* Remove a restrição de tamanho máximo */
   }
 }

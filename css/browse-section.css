@@ -1,104 +1,95 @@
 /* Estilos padrões para a seção */
 .browse-style-container {
-  background-color: white;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
+  background-color: white; /* Cor de fundo branca */
+  width: 100%; /* Largura total */
+  min-height: 100vh; /* Altura mínima da seção para preencher a tela */
+  display: flex; /* Usando flexbox para centralizar o conteúdo */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  padding: 2rem; /* Espaçamento interno */
 }
 
+/* Estilo do contêiner principal da seção */
 .browse-style {
-  background-color: #F0F0F0;
-  border-radius: 15px;
-  max-width: 1200px;
-  width: 100%;
-  padding: 40px 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #F0F0F0; /* Cor de fundo cinza claro */
+  border-radius: 15px; /* Bordas arredondadas */
+  max-width: 1200px; /* Largura máxima */
+  width: 100%; /* Largura total */
+  padding: 40px 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  display: flex; /* Usando flexbox para layout */
+  flex-direction: column; /* Alinha itens em coluna */
+  align-items: center; /* Centraliza horizontalmente */
 }
 
+/* Estilo do título dentro da seção */
 .browse-style h1 {
-  font-family: "Integral CF";
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  text-align: center;
-  padding: 1rem;
+  font-family: "Integral CF", sans-serif; /* Fonte do título */
+  font-size: 2.5rem; /* Tamanho da fonte */
+  margin-bottom: 40px; /* Margem inferior */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem; /* Espaçamento interno */
 }
 
+/* Estilo do grid de imagens */
 .browse-style-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
+  display: flex; /* Usa flexbox para layout */
+  flex-direction: column; /* Alinha itens em coluna */
+  gap: 20px; /* Espaçamento entre itens */
+  width: 100%; /* Largura total */
 }
 
+/* Estilo das linhas de imagens */
 .top-row, .bottom-row {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-sizing: border-box;
+  display: flex; /* Usa flexbox para layout */
+  width: 100%; /* Largura total */
+  gap: 20px; /* Espaçamento entre itens */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  padding: 0 20px; /* Espaçamento interno */
+  box-sizing: border-box; /* Inclui padding e borda na largura total */
 }
 
-.top-row img {
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-.bottom-row img {
-  border-radius: 20px;
-  object-fit: cover;
+/* Estilo das imagens dentro das linhas */
+.top-row img, .bottom-row img {
+  border-radius: 20px; /* Bordas arredondadas */
+  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
 }
 
 /* Tamanhos específicos para as imagens */
-.img-top-1 {
-  width: 407px; /* Tamanho específico para a imagem top 1 */
-  height: 289px;
+.img-top-1, .img-bottom-2 {
+  width: 407px; /* Largura específica */
+  height: 289px; /* Altura específica */
 }
 
-.img-top-2 {
-  width: 684px; /* Tamanho específico para a imagem top 2 */
-  height: 289px;
-}
-
-.img-bottom-1 {
-  width: 684px; /* Tamanho específico para a imagem bottom 1 */
-  height: 289px;
-}
-
-.img-bottom-2 {
-  width: 407px; /* Tamanho específico para a imagem bottom 2 */
-  height: 289px;
+.img-top-2, .img-bottom-1 {
+  width: 684px; /* Largura específica */
+  height: 289px; /* Altura específica */
 }
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
   .browse-style {
-    padding: 20px;
+    padding: 20px; /* Ajusta o padding para telas menores */
   }
 
-  .browse-style > h1{
-    font-size: 2rem;
+  .browse-style h1 {
+    font-size: 2rem; /* Ajusta o tamanho da fonte do título */
   }
+
   .browse-style-grid {
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Alinha o grid em coluna */
+    gap: 10px; /* Reduz o espaçamento entre itens */
   }
 
   .top-row, .bottom-row {
-    flex-direction: column;
-    gap: 10px;
-    padding: 0;
+    flex-direction: column; /* Alinha as linhas em coluna */
+    gap: 10px; /* Reduz o espaçamento entre itens */
+    padding: 0; /* Remove o padding */
   }
 
   .img-top-1, .img-top-2, .img-bottom-1, .img-bottom-2 {
-    width: 100%; /* Faz com que as imagens ocupem toda a largura disponível */
-    height: 150px; /* Define a mesma altura para todas as imagens */
-    max-width: none; /* Remove a restrição de tamanho máximo */
+    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
+    height: 150px; /* Define a altura das imagens */
+    max-width: none; /* Remove a restrição de largura máxima */
   }
 }

@@ -1,72 +1,73 @@
 /* Estilo para a seção new-arrivals */
 .new-arrivals {
-  width: 100%;
-  background-color: white;
-  padding: 20px;
-  text-align: center; /* Garante que todo o texto dentro da seção esteja centralizado */
+  width: 100%; /* Largura total */
+  background-color: white; /* Cor de fundo branca */
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto dentro da seção */
 }
 
 /* Estilo do título na seção new-arrivals */
 .new-arrivals h1 {
-  font-family: "Integral CF";
-  font-size: 2.5rem;
-  margin-bottom: 40px;
+  font-family: "Integral CF", sans-serif; /* Fonte do título */
+  font-size: 2.5rem; /* Tamanho da fonte */
+  margin-bottom: 40px; /* Margem inferior */
 }
 
 /* Container de cards */
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Ajuste o espaço entre os cards conforme necessário */
+  display: flex; /* Usa flexbox para layout */
+  flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
+  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: center; /* Centraliza os cards horizontalmente */
 }
 
 /* Cada card */
 .card {
-  flex: 1 1 calc(25% - 20px); /* Ajuste a largura dos cards conforme necessário */
-  box-sizing: border-box;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para o zoom */
+  flex: 1 1 calc(25% - 20px); /* Ajusta a largura dos cards */
+  box-sizing: border-box; /* Inclui padding e border na largura total */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
   overflow: hidden; /* Garante que o conteúdo do card não ultrapasse os limites */
-  background-color: #fff; /* Adiciona cor de fundo para os cards */
-  border-radius: 10px; /* Adiciona bordas arredondadas aos cards */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos cards */
+  background-color: #fff; /* Cor de fundo branca */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 /* Efeito de hover para zoom */
 .card:hover {
-  transform: scale(1.05); /* Ajuste o nível de zoom conforme necessário */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para realçar o efeito de zoom */
+  transform: scale(1.05); /* Zoom suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada */
 }
 
 /* CSS para ocultar cards adicionais inicialmente */
 .card-hidden {
-  display: none;
+  display: none; /* Oculta os cards adicionais */
 }
 
 /* CSS para mostrar os cards adicionais */
 .card-visible {
-  display: block;
+  display: block; /* Exibe os cards adicionais */
 }
 
 /* Garantir que a imagem se ajuste corretamente dentro do card */
 .card-image img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Largura total */
+  height: auto; /* Mantém a proporção da imagem */
   display: block; /* Remove espaçamento abaixo da imagem */
 }
 
 /* Garantir que o conteúdo do card fique bem posicionado */
 .card-content {
-  padding: 15px;
-  text-align: center;
+  padding: 15px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
 }
 
 .product-name {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  font-size: 1.2em; /* Tamanho da fonte */
+  margin-bottom: 10px; /* Margem inferior */
 }
 
 .rating {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Margem inferior */
 }
 
 .stars {
@@ -74,58 +75,59 @@
 }
 
 .rating-number {
-  font-size: 0.9em;
-  color: #666;
+  font-size: 0.9em; /* Tamanho da fonte */
+  color: #666; /* Cor do texto */
 }
 
 .price {
-  font-size: 1.1em;
+  font-size: 1.1em; /* Tamanho da fonte */
 }
 
 .current-price {
-  color: #333;
-  font-weight: bold;
+  color: #333; /* Cor do preço atual */
+  font-weight: bold; /* Negrito */
 }
 
 .old-price {
-  color: #888;
-  text-decoration: line-through;
-  margin-left: 10px;
+  color: #888; /* Cor do preço antigo */
+  text-decoration: line-through; /* Linha através do preço */
+  margin-left: 10px; /* Margem à esquerda */
 }
 
 .discount {
   color: #e74c3c; /* Cor para o desconto */
-  margin-left: 10px;
+  margin-left: 10px; /* Margem à esquerda */
 }
 
-/* Manter o estilo original do botão */
+/* Estilo do botão */
 .new-arrivals button {
-  width: 10%;
+  width: 10%; /* Largura do botão */
   background-color: white; /* Cor de fundo branca */
   border: 1px solid #ccc; /* Borda fina e cinza claro */
-  border-radius: 30px; /* Borda arredondada para melhor aparência */
-  padding: 10px 20px; /* Adiciona preenchimento interno */
+  border-radius: 30px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
   font-size: 1rem; /* Tamanho da fonte */
   color: black; /* Cor do texto */
-  cursor: pointer; /* Altera o cursor para indicar que é clicável */
-  margin-top: 20px; /* Espaçamento acima do botão */
-  display: inline-block; /* Faz o botão se ajustar ao conteúdo e se comportar como um bloco */
-  text-align: center; /* Centraliza o texto dentro do botão */
-  font-family: "Satoshi";
-  transition: background-color 0.4s ease;
+  cursor: pointer; /* Cursor de ponteiro */
+  margin-top: 20px; /* Margem superior */
+  display: inline-block; /* Ajusta o botão ao conteúdo */
+  text-align: center; /* Centraliza o texto */
+  font-family: "Satoshi", sans-serif; /* Fonte do botão */
+  transition: background-color 0.4s ease; /* Transição suave para a cor de fundo */
 }
 
 button:hover {
-  background-color: #9da8b5; /* Cor de fundo quando o botão é hover */
+  background-color: #9da8b5; /* Cor de fundo ao passar o mouse */
 }
 
+/* Linha separadora */
 .section-separator {
-  border: none;
+  border: none; /* Remove borda padrão */
   border-top: 1px solid #ccc; /* Linha fina e cinza claro */
-  margin: 0; /* Espaçamento acima e abaixo da linha */
+  margin: 0; /* Remove margem */
 }
 
-
+/* Estilos responsivos para telas pequenas */
 @media (max-width: 768px) {
   /* Ajusta o contêiner da seção new-arrivals */
   .new-arrivals {
@@ -133,36 +135,36 @@ button:hover {
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 20px; /* Garante o espaçamento interno */
     box-sizing: border-box; /* Inclui padding e borda na largura total */
-    text-align: center; /* Centraliza o texto no contêiner da seção */
+    text-align: center; /* Centraliza o texto */
   }
 
-  /* Centraliza o título */
+  /* Ajusta o tamanho do título */
   .new-arrivals h1 {
-    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
-    margin-bottom: 20px; /* Ajusta o espaço abaixo do título */
+    font-size: 2rem; /* Ajusta o tamanho do título */
+    margin-bottom: 20px; /* Margem inferior */
   }
 
-  /* Ajusta o contêiner dos cards para exibir apenas dois cards por vez */
+  /* Ajusta o contêiner dos cards */
   .cards-container {
-    display: flex;
     flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
     justify-content: center; /* Centraliza os cards horizontalmente */
     gap: 20px; /* Espaçamento entre os cards */
   }
 
-  /* Exibe apenas os primeiros dois cards */
+  /* Ajusta a largura dos cards para telas pequenas */
   .card {
     flex: 1 1 calc(50% - 20px); /* Ajusta a largura para dois cards por linha */
-    max-width: 220px; /* Define a largura máxima para cada card */
+    max-width: 220px; /* Define a largura máxima */
   }
 
+  /* Exibe apenas os primeiros dois cards */
   .card-hidden {
-    display: none; /* Oculta todos os cards adicionais */
+    display: none; /* Oculta os cards adicionais */
   }
 
-  /* Ajusta o botão "View All" para ocupar 100% da largura disponível */
+  /* Ajusta o botão para ocupar toda a largura disponível */
   .new-arrivals button {
-    width: 100%; /* Faz o botão ocupar toda a largura disponível */
-    margin-top: 20px; /* Espaçamento acima do botão */
+    width: 100%; /* Largura total do botão */
+    margin-top: 20px; /* Margem superior */
   }
 }

@@ -1,67 +1,117 @@
-/* Estilos gerais para a seção .main */
-.main {
+/* Estilo para a seção new-arrivals */
+.new-arrivals {
   width: 100%;
-  max-width: 1440px; /* Mantém a largura máxima do contêiner */
-  margin: 0 auto;
-  padding: 0; /* Ajusta o padding para alinhar com o header */
-  box-sizing: border-box;
-  display: flex;
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  background-color: white;
+  padding: 20px;
+  text-align: center; /* Garante que todo o texto dentro da seção esteja centralizado */
 }
 
-/* Estilo da .main-content */
-.main-content {
+/* Estilo do título na seção new-arrivals */
+.new-arrivals h1 {
+  font-family: "Integral CF";
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Container de cards */
+.cards-container {
   display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Ajuste o espaço entre os cards conforme necessário */
+}
+
+/* Cada card */
+.card {
+  flex: 1 1 calc(25% - 20px); /* Ajuste a largura dos cards conforme necessário */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para o zoom */
+  overflow: hidden; /* Garante que o conteúdo do card não ultrapasse os limites */
+  background-color: #fff; /* Adiciona cor de fundo para os cards */
+  border-radius: 10px; /* Adiciona bordas arredondadas aos cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos cards */
+}
+
+/* Efeito de hover para zoom */
+.card:hover {
+  transform: scale(1.05); /* Ajuste o nível de zoom conforme necessário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para realçar o efeito de zoom */
+}
+
+/* CSS para ocultar cards adicionais inicialmente */
+.card-hidden {
+  display: none;
+}
+
+/* CSS para mostrar os cards adicionais */
+.card-visible {
+  display: block;
+}
+
+/* Garantir que a imagem se ajuste corretamente dentro do card */
+.card-image img {
   width: 100%;
-  max-width: 1200px; /* Limita a largura máxima do conteúdo */
-  margin: 0 auto;
-  box-sizing: border-box;
+  height: auto;
+  display: block; /* Remove espaçamento abaixo da imagem */
 }
 
-/* Estilo da .text-content */
-.text-content {
-  flex: 1; /* Ocupa 50% da largura da .main-content */
-  padding-right: 20px; /* Espaço entre o texto e a imagem */
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente o conteúdo dentro da .text-content */
+/* Garantir que o conteúdo do card fique bem posicionado */
+.card-content {
+  padding: 15px;
+  text-align: center;
 }
 
-/* Estilo do texto dentro da .text-content */
-.text-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.product-name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
-.text-wrapper h1 {
-  font-family: "Integral CF", sans-serif;
-  font-size: 3.9rem;
-  line-height: 1.2;
-  margin-bottom: 20px;
+.rating {
+  margin-bottom: 10px;
 }
 
-.text-wrapper h2 {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 20px;
-  font-family: "Satoshi", sans-serif;
-  color: #00000099;
-  font-weight: 400;
+.stars {
+  color: #ffd700; /* Cor das estrelas */
 }
 
-.hero {
-  font-size: 1rem; 
-  padding: 15px 30px;
-  background-color: #000000;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  width: 12rem;
+.rating-number {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.price {
+  font-size: 1.1em;
+}
+
+.current-price {
+  color: #333;
+  font-weight: bold;
+}
+
+.old-price {
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
+}
+
+.discount {
+  color: #e74c3c; /* Cor para o desconto */
+  margin-left: 10px;
+}
+
+/* Manter o estilo original do botão */
+.new-arrivals button {
+  width: 10%;
+  background-color: white; /* Cor de fundo branca */
+  border: 1px solid #ccc; /* Borda fina e cinza claro */
+  border-radius: 30px; /* Borda arredondada para melhor aparência */
+  padding: 10px 20px; /* Adiciona preenchimento interno */
+  font-size: 1rem; /* Tamanho da fonte */
+  color: black; /* Cor do texto */
+  cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  margin-top: 20px; /* Espaçamento acima do botão */
+  display: inline-block; /* Faz o botão se ajustar ao conteúdo e se comportar como um bloco */
+  text-align: center; /* Centraliza o texto dentro do botão */
+  font-family: "Satoshi";
   transition: background-color 0.4s ease;
 }
 
@@ -69,128 +119,50 @@ button:hover {
   background-color: #9da8b5; /* Cor de fundo quando o botão é hover */
 }
 
-.info-content {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px; /* Espaçamento superior */
-}
-
-.info-content > div {
-  padding: 15px;
-  background-color: #f0f0f0;
-  text-align: left;
-  position: relative; /* Necessário para a linha vertical */
-}
-
-.info-content h2 {
-  font-family: "Satoshi", sans-serif;
-  font-size: 2.5rem; /* Tamanho da fonte ajustado */
-  font-weight: 700;
- }
- 
-.info-content h3 {
-  font-family: "Satoshi", sans-serif;
-  font-weight: 400;
-  font-size: 0.9rem; /* Tamanho da fonte ajustado */
-  color: #00000099;
-}
-
-/* Linha vertical entre as divs da .info-content */
-.info-content > div:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 1px; 
-  background-color: #ccc;
-}
-
-/* Estilo da imagem */
-.main-content img {
-  flex: 1; /* Ocupa 50% da largura da .main-content */
-  width: 100%; /* Ajusta a largura da imagem para preencher seu contêiner */
-  height: auto; /* Mantém a proporção da imagem */
+.section-separator {
+  border: none;
+  border-top: 1px solid #ccc; /* Linha fina e cinza claro */
+  margin: 0; /* Espaçamento acima e abaixo da linha */
 }
 
 
 @media (max-width: 768px) {
-  /* Garantir que todo o conteúdo não ultrapasse a borda do body */
-  .main {
-    display: flex; /* Adiciona display flex para controle de layout */
-    flex-direction: column; /* Empilha os elementos verticalmente */
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    max-width: 768px; /* Define o max-width do container */
-    margin: 0 auto; /* Centraliza o container horizontalmente */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+  /* Ajusta o contêiner da seção new-arrivals */
+  .new-arrivals {
+    max-width: 768px; /* Define a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Garante o espaçamento interno */
+    box-sizing: border-box; /* Inclui padding e borda na largura total */
+    text-align: center; /* Centraliza o texto no contêiner da seção */
   }
 
-  .main-content {
-    display: flex; /* Adiciona display flex para controle de layout */
-    flex-direction: column; /* Empilha .text-content e a imagem verticalmente */
-    width: 100%; /* Ajusta a largura para 100% */
+  /* Centraliza o título */
+  .new-arrivals h1 {
+    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 20px; /* Ajusta o espaço abaixo do título */
   }
 
-  .text-content {
-    padding: 0 16px; /* Ajusta o padding para garantir que não haja overflow */
-    width: 100%; /* Ocupa toda a largura disponível */
-    text-align: justify; /* Justifica o texto */
+  /* Ajusta o contêiner dos cards para exibir apenas dois cards por vez */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    gap: 20px; /* Espaçamento entre os cards */
   }
 
-  /* Ajusta o tamanho e o alinhamento do h1 */
-  .text-content h1 {
-    font-size: 2.2rem; /* Ajuste o tamanho conforme necessário */
-    line-height: 1; /* Ajusta o espaçamento entre linhas */
-    text-align: left; /* Alinha o texto à esquerda */
-    width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 20px; /* Reduzido o espaço superior */
-    margin-bottom: 5px; /* Reduzido o espaço inferior */
+  /* Exibe apenas os primeiros dois cards */
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Ajusta a largura para dois cards por linha */
+    max-width: 220px; /* Define a largura máxima para cada card */
   }
 
-  .text-content h2 {
-    text-align: justify; /* Justifica o texto do h2 */
-    margin-top: 5px; /* Reduzido o espaço superior */
-    margin-bottom: 15px; /* Reduzido o espaço inferior */
+  .card-hidden {
+    display: none; /* Oculta todos os cards adicionais */
   }
 
-  .hero {
-    width: 100%; /* Faz com que o botão ocupe 100% da largura */
-    padding: 16px; /* Ajusta o padding do botão */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
-    margin-bottom: 10px; /* Reduzido o espaço inferior */
-  }
-
-  .info-content {
-    display: flex; /* Adiciona display flex para controle de layout */
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-    width: 100%; /* Ajusta a largura para 100% */
-    justify-content: space-between; /* Espaça os itens */
-    gap: 10px; /* Espaçamento entre os itens */
-  }
-
-  .info-content .content-1 {
-    flex: 1 1 calc(50% - 10px); /* Ajusta a largura dos itens na linha superior */
-    padding: 10px; /* Ajusta o padding das divs */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
-    border-right: 1px solid #ccc; /* Adiciona a borda direita */
-  }
-
-  .info-content .content-2 {
-    flex: 1 1 calc(50% - 10px); /* Ajusta a largura dos itens na linha superior */
-    padding: 10px; /* Ajusta o padding das divs */
-    box-sizing: border-box;
-  }
-
-  .info-content .content-3 {
-   /* Garante que o item da linha inferior ocupe toda a largura */
-    text-align: center; /* Centraliza o texto no item da linha inferior */
-    margin-top: 10px; /* Adiciona margem superior para espaçamento */
-    margin-left: 6rem;
-    padding: 10px; /* Ajusta o padding da div */
-  }
-
-  .main-content img {
-    width: 100%; /* Ajusta a largura da imagem para 100% */
-    height: auto; /* Mantém a proporção da imagem */
+  /* Ajusta o botão "View All" para ocupar 100% da largura disponível */
+  .new-arrivals button {
+    width: 100%; /* Faz o botão ocupar toda a largura disponível */
+    margin-top: 20px; /* Espaçamento acima do botão */
   }
 }

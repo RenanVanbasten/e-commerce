@@ -167,4 +167,9 @@ button:hover {
     width: 100%; /* Largura total do botão */
     margin-top: 20px; /* Margem superior */
   }
+
+  .product-card:nth-child(n + 4) {
+    display: none;
+  }
+
 }

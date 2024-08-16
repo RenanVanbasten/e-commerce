@@ -53,6 +53,7 @@
 .top-row img, .bottom-row img {
   border-radius: 20px; /* Bordas arredondadas */
   object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
 }
 
 /* Tamanhos específicos para as imagens */
@@ -64,6 +65,12 @@
 .img-top-2, .img-bottom-1 {
   width: 684px; /* Largura específica */
   height: 289px; /* Altura específica */
+}
+
+/* Adiciona efeito de zoom e sombra nas imagens ao passar o mouse */
+.top-row img:hover, .bottom-row img:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
 }
 
 /* Media Query para telas menores */

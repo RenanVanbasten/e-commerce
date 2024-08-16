@@ -1,21 +1,19 @@
 .subscribe {
-    background-color: #000000;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: absolute; /* Posiciona a .subscribe sobre as outras seções */
-    top: 1000px; /* Ajusta o top para posicionar a .subscribe no centro */
-    left: 0;
-    right: 0;
-    z-index: 100; /* Garante que a .subscribe fique acima das outras seções */
-  }
-  
+  background-color: #000000;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative; /* Torna o posicionamento relativo à sua posição original */
+  margin-top: -100px; /* Move a seção para cima para que ela fique sobre a seção de depoimentos */
+  z-index: 100; /* Garante que a .subscribe fique acima das outras seções */
+}
+
   .subscribe h1 {
     font-family: "Integral CF", sans-serif;
     font-size: 40px;
@@ -67,35 +65,32 @@
   /* Estilos para telas menores que 768px */
   @media (max-width: 768px) {
     .subscribe {
-        flex-direction: column; /* Empilha o título e o conteúdo verticalmente */
-        align-items: center; /* Centraliza o conteúdo horizontalmente */
-        padding: 20px; /* Ajusta o padding para melhor adequação em telas menores */
-        position: relative; /* Remove o posicionamento absoluto */
-        top: auto; /* Remove o ajuste do top */
-        max-width: 100%; /* Garante que a largura seja 100% da tela */
-        height: auto; /* Ajusta a altura automaticamente */
+      flex-direction: column; /* Empilha o título e o conteúdo verticalmente */
+      align-items: center; /* Centraliza o conteúdo horizontalmente */
+      padding: 20px; /* Ajusta o padding para melhor adequação em telas menores */
+      margin-top: -50px; /* Ajusta a margem superior para que a seção ainda sobreponha as outras */
     }
-
+  
     .subscribe h1 {
-        font-size: 2rem; /* Reduz o tamanho da fonte para dispositivos móveis */
-        line-height: 30px; /* Ajusta o espaçamento entre linhas */
-        text-align: center; /* Centraliza o texto */
-        padding: 0 0 20px 0; /* Remove o padding lateral e adiciona padding inferior */
-        margin: 0; /* Remove o margin para ajustar o espaço */
+      font-size: 2rem; /* Reduz o tamanho da fonte para dispositivos móveis */
+      line-height: 30px; /* Ajusta o espaçamento entre linhas */
+      text-align: center; /* Centraliza o texto */
+      padding: 0 0 20px 0; /* Remove o padding lateral e adiciona padding inferior */
+      margin: 0; /* Remove o margin para ajustar o espaço */
     }
-
+  
     .subscribe-content {
-        display: flex;
-        flex-direction: column; /* Mantém input e botão um abaixo do outro */
-        align-items: center; /* Centraliza os itens */
-        gap: 5px; /* Espaço entre o campo de entrada e o botão */
-        width: 100%; /* Ocupa a largura total disponível */
-        padding-right: 0; /* Remove o padding direito */
+      display: flex;
+      flex-direction: column; /* Mantém input e botão um abaixo do outro */
+      align-items: center; /* Centraliza os itens */
+      gap: 5px; /* Espaço entre o campo de entrada e o botão */
+      width: 100%; /* Ocupa a largura total disponível */
+      padding-right: 0; /* Remove o padding direito */
     }
-
+  
     .subscribe input,
     .subscribe button {
-        width: 100%; /* Faz com que os itens ocupem toda a largura disponível */
-        max-width: 349px; /* Define uma largura máxima para não ficar muito grande */
+      width: 100%; /* Faz com que os itens ocupem toda a largura disponível */
+      max-width: 349px; /* Define uma largura máxima para não ficar muito grande */
     }
-}
+  }

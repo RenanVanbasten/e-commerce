@@ -10,7 +10,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     position: absolute; /* Posiciona a .subscribe sobre as outras seções */
-    top: 2910px; /* Ajusta o top para posicionar a .subscribe no centro */
+    top: 1000px; /* Ajusta o top para posicionar a .subscribe no centro */
     left: 0;
     right: 0;
     z-index: 100; /* Garante que a .subscribe fique acima das outras seções */

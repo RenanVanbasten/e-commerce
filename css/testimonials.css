@@ -48,43 +48,66 @@
 /* Estilos para o carrossel */
 .carousel {
   display: flex;
-  justify-content: space-between; /* Garantir que todos os cards sejam visíveis */
+  justify-content: space-between; /* Garantir que todos os cartões sejam visíveis */
   overflow: hidden;
   position: relative;
   width: 100%;
   padding: 10px;
   box-sizing: border-box; /* Inclui padding na largura total */
   margin-top: 20px; /* Ajuste a margem superior para alinhamento */
-  gap: 10px; /* Espaçamento entre os cards */
+  gap: 10px; /* Espaçamento entre os cartões */
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  transition: scroll-left 0.3s ease;
+  
 }
 
-/* Estilos para os cards */
-.cards-1, .cards-2, .cards-3 {
-  flex: 0 0 30%; /* Cada card ocupa 30% da largura do contêiner */
+.carousel-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; /* Adiciona um cursor pointer para indicar que é clicável */
+  width: 40px; /* Ajuste o tamanho conforme necessário */
+  height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.cartao {
+  display: inline-block; /* Garante que os cartões sejam tratados como elementos em linha */
+  flex: 0 0 auto; /* Garante que os cartões não encolham ou expandam */
+}
+
+/* Estilos para os cartões */
+.cartao-1, .cartao-2, .cartao-3, .cartao-4, .cartao-5 {
+  flex: 0 0 30%; /* Cada cartão ocupa 30% da largura do contêiner */
   box-sizing: border-box;
   padding: 20px; /* Aumenta o padding interno para maior conforto visual */
-  text-align: left; /* Alinhamento à esquerda do texto dentro do card */
-  background-color: white; /* Cor de fundo branca para os cards */
+  text-align: left; /* Alinhamento à esquerda do texto dentro do cartão */
+  background-color: white; /* Cor de fundo branca para os cartões */
   border: 1px solid #ddd; /* Borda fina e clara */
   border-radius: 20px; /* Pontas arredondadas */
-  margin: 0 5px; /* Espaçamento entre os cards */
+  margin: 0 5px; /* Espaçamento entre os cartões */
   font-family: "Satoshi", sans-serif; /* Define a fonte como Satoshi */
 }
 
-/* Estilo dos elementos dentro dos cards */
-.cards-1 .stars, .cards-2 .stars, .cards-3 .stars {
+/* Estilo dos elementos dentro dos cartões */
+.cartao-1 .stars, .cartao-2 .stars, .cartao-3 .stars, .cartao-4 .stars, .cartao-5 .stars {
   font-size: 24px;
   color: #ffcc00;
   display: block;
   margin-bottom: 10px;
 }
 
-.cards-1 .name, .cards-2 .name, .cards-3 .name {
+.cartao-1 .name, .cartao-2 .name, .cartao-3 .name, .cartao-4 .name, .cartao-5 .name {
   font-size: 1.5rem; /* Ajuste para alinhar com as proporções do .main */
   font-weight: bold; /* Letras do nome em negrito */
 }
 
-.cards-1 .message, .cards-2 .message, .cards-3 .message {
+.cartao-1 .message, .cartao-2 .message, .cartao-4 .message, .cartao-5 .message {
   font-size: 0.9rem; /* Ajuste para alinhar com as proporções do .main */
   line-height: 1.5;
   font-weight: 300; /* Letras do depoimento mais finas */
@@ -92,17 +115,9 @@
   text-align: left; /* Garante que o texto dentro da mensagem esteja alinhado à esquerda */
 }
 
-.cards-1 h2 img, .cards-2 h2 img, .cards-3 h2 img {
+.cartao-1 h2 img, .cartao-2 h2 img, .cartao-3 h2 img, .cartao-4 h2 img, .cartao-5 h2 img {
   vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
 }
-
-/* Ajuste para garantir que todos os 3 cards apareçam */
-.carousel {
-  display: flex;
-  flex-wrap: nowrap; /* Evita que os cards se movam para baixo */
-  align-items: flex-start; /* Alinha os itens ao topo */
-}
-
 
 /* Media Query para telas menores */
 @media (max-width: 768px) {
@@ -138,19 +153,19 @@
 
   .carousel {
     display: flex;
-    flex-direction: column; /* Alinha os cards verticalmente */
-    align-items: center; /* Centraliza os cards horizontalmente */
+    flex-direction: column; /* Alinha os cartões verticalmente */
+    align-items: center; /* Centraliza os cartões horizontalmente */
     overflow: hidden;
     width: 100%;
     padding: 0;
     margin-top: 20px; /* Ajusta a margem superior para o novo layout */
   }
 
-  /* Estilo para ocultar os outros cards */
-  .cards-1 {
-    display: block; /* Exibe o card-1 */
-    flex: 0 0 100%; /* Cada card ocupa 100% da largura do contêiner */
-    margin-bottom: 20px; /* Espaço abaixo de cada card */
+  /* Estilo para ocultar os outros cartões */
+  .cartao-1 {
+    display: block; /* Exibe o cartao-1 */
+    flex: 0 0 100%; /* Cada cartão ocupa 100% da largura do contêiner */
+    margin-bottom: 20px; /* Espaço abaixo de cada cartão */
     border: 1px solid #ddd; /* Borda fina e clara */
     border-radius: 15px; /* Pontas arredondadas */
     padding: 20px; /* Adiciona padding interno */
@@ -159,8 +174,7 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve para destaque */
   }
 
-  .cards-2, .cards-3 {
-    display: none; /* Oculta os cards-2 e cards-3 */
+  .cartao-2, .cartao-3, .cartao-4, .cartao-5 {
+    display: none; /* Oculta os cartao-2 e cartao-3 */
   }
 }
-

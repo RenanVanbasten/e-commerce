@@ -3,6 +3,7 @@
   width: 100%;
   background-color: white;
   padding: 20px;
+  text-align: center; /* Garante que todo o texto dentro da seção esteja centralizado */
 }
 
 /* Estilo do título na seção new-arrivals */
@@ -12,122 +13,92 @@
   margin-bottom: 40px;
 }
 
-/* Estilo para o contêiner das cards */
+/* Container de cards */
 .cards-container {
-  max-width: 1200px; /* Define a largura máxima do conteúdo do contêiner */
-  margin: 0 auto; /* Centraliza horizontalmente */
   display: flex;
-  justify-content: space-between; /* Espaça uniformemente os itens dentro do contêiner */
-  align-items: center; /* Alinha verticalmente o conteúdo */
-  width: 100%; /* Ocupa toda a largura disponível */
-  padding: 0; /* Remove padding lateral */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
-  gap: 20px; /* Espaçamento entre os cards */
+  flex-wrap: wrap;
+  gap: 20px; /* Ajuste o espaço entre os cards conforme necessário */
 }
 
-/* Estilo para os cards */
-.card-1, .card-2, .card-3, .card-4 {
-  width: 220px;
-  padding: 20px;
-  margin: 0; /* Remove a margem para encostar os cards nas bordas laterais */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+/* Cada card */
+.card {
+  flex: 1 1 calc(25% - 20px); /* Ajuste a largura dos cards conforme necessário */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave para o zoom */
+  overflow: hidden; /* Garante que o conteúdo do card não ultrapasse os limites */
+  background-color: #fff; /* Adiciona cor de fundo para os cards */
+  border-radius: 10px; /* Adiciona bordas arredondadas aos cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra aos cards */
 }
 
-.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+/* Efeito de hover para zoom */
+.card:hover {
+  transform: scale(1.05); /* Ajuste o nível de zoom conforme necessário */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra para realçar o efeito de zoom */
 }
 
-/* Estilo para a imagem dentro dos cards */
-.card-image {
-  width: 100%;
-  height: 150px; /* Altura fixa para as imagens */
-  overflow: hidden;
-  background-color: #f2f0f1; /* Cor de fundo da imagem */
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* CSS para ocultar cards adicionais inicialmente */
+.card-hidden {
+  display: none;
 }
 
+/* CSS para mostrar os cards adicionais */
+.card-visible {
+  display: block;
+}
+
+/* Garantir que a imagem se ajuste corretamente dentro do card */
 .card-image img {
-  width: auto;
-  height: 100%;
-  max-width: 100%;
-  object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+  width: 100%;
+  height: auto;
+  display: block; /* Remove espaçamento abaixo da imagem */
 }
 
-/* Estilo para o conteúdo do card */
+/* Garantir que o conteúdo do card fique bem posicionado */
 .card-content {
-  text-align: left;
-  font-family: "Satoshi";
-  padding: 0; /* Remove o preenchimento para reduzir o espaço */
-  margin: 0; /* Remove a margem para reduzir o espaço */
+  padding: 15px;
+  text-align: center;
 }
 
-/* Estilo para o nome do produto */
 .product-name {
-  font-size: 0.7rem;
-  margin-bottom: 5px; /* Reduz o espaço abaixo do nome do produto */
-  font-weight: bold; /* Mesmo peso de fonte que o preço */
-  white-space: nowrap; /* Impede quebras de linha no nome do produto */
-  overflow: hidden; /* Oculta texto que ultrapassa o contêiner */
-  text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
-/* Estilo para a classificação do produto */
 .rating {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px; /* Reduz o espaço abaixo da classificação */
+  margin-bottom: 10px;
 }
 
 .stars {
-  color: #ffb400;
-  font-size: 1rem;
+  color: #ffd700; /* Cor das estrelas */
 }
 
 .rating-number {
-  margin-left: 5px;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: #666;
 }
 
-/* Estilo para o preço do produto */
 .price {
-  font-size: 1.1rem;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Espaçamento entre os elementos de preço */
-  margin-top: 5px; /* Adiciona um pequeno espaço acima do preço */
+  font-size: 1.1em;
 }
 
 .current-price {
   color: #333;
+  font-weight: bold;
 }
 
 .old-price {
-  color: #999;
+  color: #888;
   text-decoration: line-through;
+  margin-left: 10px;
 }
 
-/* Estilo para o desconto do produto */
 .discount {
-  background-color: #f2f0f1;
-  color: red;
-  padding: 5px 10px;
-  border-radius: 20px; /* Ajustado para melhor aparência */
-  text-decoration: none;
-  font-size: 0.5rem; /* Ajustado para ser mais legível */
+  color: #e74c3c; /* Cor para o desconto */
+  margin-left: 10px;
 }
 
-/* Estilo para a seção new-arrivals para centralizar o botão */
-.new-arrivals {
-  text-align: center; /* Garante que o botão fique centralizado horizontalmente */
-}
-
+/* Manter o estilo original do botão */
 .new-arrivals button {
   width: 10%;
   background-color: white; /* Cor de fundo branca */
@@ -140,14 +111,12 @@
   margin-top: 20px; /* Espaçamento acima do botão */
   display: inline-block; /* Faz o botão se ajustar ao conteúdo e se comportar como um bloco */
   text-align: center; /* Centraliza o texto dentro do botão */
-  font-family: "Satoshi"; /* Família de fontes consistente com o resto */
+  font-family: "Satoshi";
+  transition: background-color 0.4s ease;
 }
 
-/* Estilo para o separador de seção */
-.section-separator {
-  border: none;
-  border-top: 1px solid #ccc; /* Linha fina e cinza claro */
-  margin: 0; /* Espaçamento acima e abaixo da linha */
+button:hover {
+  background-color: #9da8b5; /* Cor de fundo quando o botão é hover */
 }
 
 @media (max-width: 768px) {
@@ -157,12 +126,12 @@
     margin: 0 auto; /* Centraliza horizontalmente */
     padding: 20px; /* Garante o espaçamento interno */
     box-sizing: border-box; /* Inclui padding e borda na largura total */
+    text-align: center; /* Centraliza o texto no contêiner da seção */
   }
 
   /* Centraliza o título */
   .new-arrivals h1 {
     font-size: 2rem; /* Ajuste o tamanho conforme necessário */
-    text-align: center; /* Centraliza o título */
     margin-bottom: 20px; /* Ajusta o espaço abaixo do título */
   }
 
@@ -188,7 +157,6 @@
   }
 
   /* Ajusta o botão "View All" para ocupar 100% da largura disponível */
-
   .new-arrivals button {
     width: 100%; /* Faz o botão ocupar toda a largura disponível */
     margin-top: 20px; /* Espaçamento acima do botão */

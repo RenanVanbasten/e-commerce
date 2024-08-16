@@ -133,7 +133,12 @@
   margin-top: 20px; /* Espaçamento acima do botão */
   display: inline-block; /* Faz o botão se ajustar ao conteúdo e se comportar como um bloco */
   text-align: center; /* Centraliza o texto dentro do botão */
-  font-family: "Satoshi"; /* Família de fontes consistente com o resto */
+  font-family: "Satoshi";
+  transition: background-color 0.4s ease;
+}
+
+button:hover {
+  background-color: #9da8b5; /* Cor de fundo quando o botão é hover */
 }
 
 /* Media Queries para responsividade */
@@ -145,7 +150,7 @@
     box-sizing: border-box; /* Inclui padding e borda na largura total */
   }
 
-  .top-selling h1{
+  .top-selling h1 {
     font-size: 2rem; /* Ajuste o tamanho conforme necessário */
     text-align: center; /* Centraliza o título */
     margin-bottom: 20px; /* Ajusta o espaço abaixo do título */
@@ -160,7 +165,9 @@
 
   .card-1,
   .card-2 {
-    width: calc(50% - 10px); /* Define a largura dos cards para metade da largura do contêiner menos a margem */
+    width: calc(
+      50% - 10px
+    ); /* Define a largura dos cards para metade da largura do contêiner menos a margem */
     margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
   }
 

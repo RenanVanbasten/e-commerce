@@ -34,12 +34,23 @@
           <a class="menu-toggle"> ☰ </a>
           <p class="logo">SHOP.CO</p>
           <ul class="nav-links" id="nav-links">
-            <li><a href="#Shop"><span>Shop<img src="/assets/icons/drop-down-icon.svg" alt="verif Icon" /></span></a></li>
+            <li>
+              <a href="#Shop"
+                ><span
+                  >Shop<img
+                    src="/assets/icons/drop-down-icon.svg"
+                    alt="verif Icon" /></span
+              ></a>
+            </li>
             <li><a href="#onSale">On Sale</a></li>
             <li><a href="#newArrivals">New Arrivals</a></li>
             <li><a href="#brands">Brands</a></li>
           </ul>
-          <input id="input-header" type="text" placeholder="           Search for products..." />
+          <input
+            id="input-header"
+            type="text"
+            placeholder="           Search for products..."
+          />
           <div class="img-nav">
             <a class="search-toggle">
               <img src="/assets/icons/search.svg" alt="Search Icon" />
@@ -98,9 +109,10 @@
     <section class="new-arrivals">
       <h1>NEW ARRIVALS</h1>
       <div class="cards-container">
-        <div class="card-1">
+        <!-- Cards visíveis -->
+        <div class="card">
           <div class="card-image">
-            <img src="/assets/img/t-shirt.svg" alt="" srcset="" />
+            <img src="/assets/img/t-shirt.svg" alt="" />
           </div>
           <div class="card-content">
             <p class="product-name">T-shirt with Tape Details</p>
@@ -111,9 +123,9 @@
             <p class="price">$120</p>
           </div>
         </div>
-        <div class="card-2">
+        <div class="card">
           <div class="card-image">
-            <img src="/assets/img/skinny.svg" alt="" srcset="" />
+            <img src="/assets/img/skinny.svg" alt="" />
           </div>
           <div class="card-content">
             <p class="product-name">Skinny Fit Jeans</p>
@@ -128,9 +140,9 @@
             </p>
           </div>
         </div>
-        <div class="card-3">
+        <div class="card">
           <div class="card-image">
-            <img src="/assets/img/checkered-shirt.svg" alt="" srcset="" />
+            <img src="/assets/img/checkered-shirt.svg" alt="" />
           </div>
           <div class="card-content">
             <p class="product-name">Checkered Shirt</p>
@@ -141,9 +153,9 @@
             <p class="price">$120</p>
           </div>
         </div>
-        <div class="card-4">
+        <div class="card">
           <div class="card-image">
-            <img src="/assets/img/striped-t-shirt.svg" alt="" srcset="" />
+            <img src="/assets/img/striped-t-shirt.svg" alt="" />
           </div>
           <div class="card-content">
             <p class="product-name">Sleeve Striped T-shirt</p>
@@ -158,15 +170,78 @@
             </p>
           </div>
         </div>
+
+        <!-- Cards adicionais ocultos inicialmente -->
+        <div class="card card-hidden">
+          <div class="card-image">
+            <img src="/assets/img/t-shirt.svg" alt="" />
+          </div>
+          <div class="card-content">
+            <p class="product-name">Additional T-shirt with Tape Details</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-number">4/5</span>
+            </div>
+            <p class="price">$120</p>
+          </div>
+        </div>
+        <div class="card card-hidden">
+          <div class="card-image">
+            <img src="/assets/img/skinny.svg" alt="" />
+          </div>
+          <div class="card-content">
+            <p class="product-name">Additional Skinny Fit Jeans</p>
+            <div class="rating">
+              <span class="stars">★★★☆☆</span>
+              <span class="rating-number">3.5/5</span>
+            </div>
+            <p class="price">
+              <span class="current-price">$240</span>
+              <span class="old-price">$260</span>
+              <a href="#" class="discount">-20%</a>
+            </p>
+          </div>
+        </div>
+        <div class="card card-hidden">
+          <div class="card-image">
+            <img src="/assets/img/checkered-shirt.svg" alt="" />
+          </div>
+          <div class="card-content">
+            <p class="product-name">Additional Checkered Shirt</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-number">4/5</span>
+            </div>
+            <p class="price">$120</p>
+          </div>
+        </div>
+        <div class="card card-hidden">
+          <div class="card-image">
+            <img src="/assets/img/striped-t-shirt.svg" alt="" />
+          </div>
+          <div class="card-content">
+            <p class="product-name">Additional Sleeve Striped T-shirt</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-number">4/5</span>
+            </div>
+            <p class="price">
+              <span class="current-price">$130</span>
+              <span class="old-price">$160</span>
+              <a href="#" class="discount">-30%</a>
+            </p>
+          </div>
+        </div>
       </div>
-      <button type="button">View All</button>
+      <button type="button" id="view-all-new-arrivals">View All</button>
     </section>
-    <hr class="section-separator" />
+
     <section class="top-selling">
       <div class="top-selling-container">
         <h1>TOP SELLING</h1>
         <div class="cards-container">
-          <div class="card-1">
+          <!-- Cards visíveis -->
+          <div class="card">
             <div class="card-image">
               <img
                 src="/assets/img/vertical-striped-t-shirt.svg"
@@ -186,7 +261,7 @@
               </p>
             </div>
           </div>
-          <div class="card-2">
+          <div class="card">
             <div class="card-image">
               <img
                 src="/assets/img/courage-graphic-t-shirt.svg"
@@ -202,7 +277,7 @@
               <p class="price">$145</p>
             </div>
           </div>
-          <div class="card-3">
+          <div class="card">
             <div class="card-image">
               <img
                 src="/assets/img/loose-fit-bermuda-shorts.svg"
@@ -218,7 +293,7 @@
               <p class="price">$80</p>
             </div>
           </div>
-          <div class="card-4">
+          <div class="card">
             <div class="card-image">
               <img
                 src="/assets/img/faded-skinny-jeans.svg"
@@ -234,10 +309,81 @@
               <p class="price">$210</p>
             </div>
           </div>
+
+          <!-- Cards adicionais ocultos inicialmente -->
+          <div class="card card-hidden">
+            <div class="card-image">
+              <img
+                src="/assets/img/vertical-striped-t-shirt.svg"
+                alt="Vertical Striped Shirt"
+              />
+            </div>
+            <div class="card-content">
+              <p class="product-name">Additional Vertical Striped Shirt</p>
+              <div class="rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-number">5.0/5</span>
+              </div>
+              <p class="price">
+                <span class="current-price">$212</span>
+                <span class="old-price">$232</span>
+                <a href="#" class="discount">-20%</a>
+              </p>
+            </div>
+          </div>
+          <div class="card card-hidden">
+            <div class="card-image">
+              <img
+                src="/assets/img/courage-graphic-t-shirt.svg"
+                alt="Courage Graphic T-shirt"
+              />
+            </div>
+            <div class="card-content">
+              <p class="product-name">Additional Courage Graphic T-shirt</p>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-number">4.0/5</span>
+              </div>
+              <p class="price">$145</p>
+            </div>
+          </div>
+          <div class="card card-hidden">
+            <div class="card-image">
+              <img
+                src="/assets/img/loose-fit-bermuda-shorts.svg"
+                alt="Loose Fit Bermuda Shorts"
+              />
+            </div>
+            <div class="card-content">
+              <p class="product-name">Additional Loose Fit Bermuda Shorts</p>
+              <div class="rating">
+                <span class="stars">★★★☆☆</span>
+                <span class="rating-number">3.0/5</span>
+              </div>
+              <p class="price">$80</p>
+            </div>
+          </div>
+          <div class="card card-hidden">
+            <div class="card-image">
+              <img
+                src="/assets/img/faded-skinny-jeans.svg"
+                alt="Faded Skinny Jeans"
+              />
+            </div>
+            <div class="card-content">
+              <p class="product-name">Additional Faded Skinny Jeans</p>
+              <div class="rating">
+                <span class="stars">★★★★☆</span>
+                <span class="rating-number">4.5/5</span>
+              </div>
+              <p class="price">$210</p>
+            </div>
+          </div>
         </div>
-        <button type="button">View All</button>
+        <button type="button" id="view-all-top-selling">View All</button>
       </div>
     </section>
+
     <section class="browse-style-container">
       <div class="browse-style">
         <h1>BROWSE BY DRESS STYLE</h1>
@@ -276,7 +422,13 @@
         <div class="carousel">
           <div class="cards-1">
             <a class="stars">★★★★★</a>
-            <h2 class="name"><span>Renan Vanbasten<img src="/assets/icons/verific-icon.svg" alt="verif Icon" /></span></h2>
+            <h2 class="name">
+              <span
+                >Renan Vanbasten<img
+                  src="/assets/icons/verific-icon.svg"
+                  alt="verif Icon"
+              /></span>
+            </h2>
             <p class="message">
               "I'm blown away by the quality and style of the clothes I received
               from Shop.co. From casual wear to elegant dresses, every piece
@@ -285,7 +437,13 @@
           </div>
           <div class="cards-2">
             <a class="stars">★★★★★</a>
-            <h2 class="name"><span>Renan Vanbasten<img src="/assets/icons/verific-icon.svg" alt="verif Icon" /></span></h2>
+            <h2 class="name">
+              <span
+                >Renan Vanbasten<img
+                  src="/assets/icons/verific-icon.svg"
+                  alt="verif Icon"
+              /></span>
+            </h2>
             <p class="message">
               "I'm blown away by the quality and style of the clothes I received
               from Shop.co. From casual wear to elegant dresses, every piece
@@ -294,7 +452,13 @@
           </div>
           <div class="cards-3">
             <a class="stars">★★★★★</a>
-            <h2 class="name"><span>Renan Vanbasten<img src="/assets/icons/verific-icon.svg" alt="verif Icon" /></span></h2>
+            <h2 class="name">
+              <span
+                >Renan Vanbasten<img
+                  src="/assets/icons/verific-icon.svg"
+                  alt="verif Icon"
+              /></span>
+            </h2>
             <p class="message">
               "I'm blown away by the quality and style of the clothes I received
               from Shop.co. From casual wear to elegant dresses, every piece
@@ -403,5 +567,7 @@
         </div>
       </div>
     </section>
+
+    <script src="/JavaScript/index.js"></script>
   </body>
 </html>

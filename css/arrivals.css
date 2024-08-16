@@ -120,25 +120,27 @@ button:hover {
 /* Estilos responsivos para telas pequenas */
 @media (max-width: 768px) {
   .cards-container {
-    flex-direction: column; /* Coloca os cards em coluna */
-    align-items: center; /* Centraliza os cards na coluna */
+    display: grid; /* Utiliza grid para layout */
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas com largura igual */
+    gap: 20px; /* Espaçamento entre os cards */
+    justify-content: center; /* Centraliza os cards no grid */
   }
 
   .card {
-    flex: 1 1 100%; /* Cards ocupam 100% da largura */
-    max-width: 500px; /* Define uma largura máxima */
+    flex: 1 1 calc(50% - 20px); /* Ajusta os cards para ocupar 50% da largura */
+    max-width: 100%; /* Garante que os cards ocupem toda a largura disponível */
   }
 
   .cards-container .card:nth-child(n+3) {
-    display: none;
+    display: none; /* Oculta os cards adicionais inicialmente */
   }
 
   .cards-container .card.card-visible {
-    display: block;
+    display: block; /* Exibe os cards visíveis */
   }
 
-  .new-arrivals button {
-    width: 100%;
+  .expandable-section button {
+    width: 100%; /* Botão ocupa toda a largura em telas pequenas */
     margin-top: 20px;
   }
 }

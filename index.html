@@ -71,9 +71,23 @@
               <li><a href="#onSale">On Sale</a></li>
               <li><a href="#newArrivals">New Arrivals</a></li>
               <li><a href="#brands">Brands</a></li>
-              <li><a href="#search"><img src="/assets/icons/search.svg" alt="Search Icon" /> Search</a></li>
-              <li><a href="#cart"><img src="/assets/icons/cart.svg" alt="Cart Icon" /> Cart</a></li>
-              <li><a href="#login"><img src="/assets/icons/login.svg" alt="Login Icon" /> User</a></li>
+              <li>
+                <a href="#search"
+                  ><img src="/assets/icons/search.svg" alt="Search Icon" />
+                  Search</a
+                >
+              </li>
+              <li>
+                <a href="#cart"
+                  ><img src="/assets/icons/cart.svg" alt="Cart Icon" /> Cart</a
+                >
+              </li>
+              <li>
+                <a href="#login"
+                  ><img src="/assets/icons/login.svg" alt="Login Icon" />
+                  User</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -120,13 +134,13 @@
         </div>
       </div>
     </section>
-    <section class="new-arrivals">
+    <section class="expandable-section new-arrivals">
       <h1>NEW ARRIVALS</h1>
       <div class="cards-container">
-        <!-- Cards visíveis -->
+        <!-- Todos os cards -->
         <div class="card">
           <div class="card-image">
-            <img src="/assets/img/t-shirt.svg" alt="" />
+            <img src="/assets/img/t-shirt.svg" alt="T-shirt" />
           </div>
           <div class="card-content">
             <p class="product-name">T-shirt with Tape Details</p>
@@ -139,7 +153,7 @@
         </div>
         <div class="card">
           <div class="card-image">
-            <img src="/assets/img/skinny.svg" alt="" />
+            <img src="/assets/img/skinny.svg" alt="Skinny Fit Jeans" />
           </div>
           <div class="card-content">
             <p class="product-name">Skinny Fit Jeans</p>
@@ -156,7 +170,7 @@
         </div>
         <div class="card">
           <div class="card-image">
-            <img src="/assets/img/checkered-shirt.svg" alt="" />
+            <img src="/assets/img/checkered-shirt.svg" alt="Checkered Shirt" />
           </div>
           <div class="card-content">
             <p class="product-name">Checkered Shirt</p>
@@ -169,7 +183,7 @@
         </div>
         <div class="card">
           <div class="card-image">
-            <img src="/assets/img/striped-t-shirt.svg" alt="" />
+            <img src="/assets/img/striped-t-shirt.svg" alt="Sleeve Striped T-shirt" />
           </div>
           <div class="card-content">
             <p class="product-name">Sleeve Striped T-shirt</p>
@@ -186,7 +200,7 @@
         </div>
         <div class="card card-hidden">
           <div class="card-image">
-            <img src="/assets/img/t-shirt.svg" alt="" />
+            <img src="/assets/img/t-shirt.svg" alt="Additional T-shirt with Tape Details" />
           </div>
           <div class="card-content">
             <p class="product-name">Additional T-shirt with Tape Details</p>
@@ -199,7 +213,7 @@
         </div>
         <div class="card card-hidden">
           <div class="card-image">
-            <img src="/assets/img/skinny.svg" alt="" />
+            <img src="/assets/img/skinny.svg" alt="Additional Skinny Fit Jeans" />
           </div>
           <div class="card-content">
             <p class="product-name">Additional Skinny Fit Jeans</p>
@@ -216,7 +230,7 @@
         </div>
         <div class="card card-hidden">
           <div class="card-image">
-            <img src="/assets/img/checkered-shirt.svg" alt="" />
+            <img src="/assets/img/checkered-shirt.svg" alt="Additional Checkered Shirt" />
           </div>
           <div class="card-content">
             <p class="product-name">Additional Checkered Shirt</p>
@@ -229,7 +243,7 @@
         </div>
         <div class="card card-hidden">
           <div class="card-image">
-            <img src="/assets/img/striped-t-shirt.svg" alt="" />
+            <img src="/assets/img/striped-t-shirt.svg" alt="Additional Sleeve Striped T-shirt" />
           </div>
           <div class="card-content">
             <p class="product-name">Additional Sleeve Striped T-shirt</p>
@@ -245,10 +259,12 @@
           </div>
         </div>
       </div>
-      <button type="button" id="view-all-new-arrivals">View All</button>
+      <button type="button" class="view-all">View All</button>
     </section>
+    
+
     <hr class="section-separator" />
-    <section class="top-selling">
+    <section class="expandable-section top-selling">
       <div class="top-selling-container">
         <h1>TOP SELLING</h1>
         <div class="cards-container">
@@ -390,7 +406,7 @@
             </div>
           </div>
         </div>
-        <button type="button" id="view-all-top-selling">View All</button>
+        <button type="button" class="view-all">View All</button>
       </div>
     </section>
     <section class="browse-style-container">
@@ -606,13 +622,11 @@
         </div>
       </div>
     </section>
-    
+
     <script src="/JavaScript/arrivals.js"></script>
     <script src="/JavaScript/testimonials.js"></script>
     <script src="/JavaScript/subscribe.js"></script>
     <script src="/JavaScript/header.js"></script>
     <script src="/JavaScript/promo.js"></script>
-
-
   </body>
 </html>

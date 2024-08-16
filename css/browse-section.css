@@ -40,21 +40,40 @@
   display: flex;
   width: 100%;
   gap: 20px;
-  justify-content: center;
+  justify-content: space-between;
   padding: 0 20px;
   box-sizing: border-box;
 }
 
-.top-row img, .bottom-row img {
-  border-radius: 10px;
-  box-sizing: border-box;
-  object-fit: cover; /* Garante que a imagem cubra o contêiner */
+.top-row img {
+  border-radius: 20px;
+  object-fit: cover;
 }
 
-/* Ajustes específicos */
-.img-top-1, .img-top-2, .img-bottom-1, .img-bottom-2 {
-  width: 100%; /* Ocupa 100% da largura disponível */
-  height: 300px; /* Defina a altura desejada */
+.bottom-row img {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+/* Tamanhos específicos para as imagens */
+.img-top-1 {
+  width: 407px; /* Tamanho específico para a imagem top 1 */
+  height: 289px;
+}
+
+.img-top-2 {
+  width: 684px; /* Tamanho específico para a imagem top 2 */
+  height: 289px;
+}
+
+.img-bottom-1 {
+  width: 684px; /* Tamanho específico para a imagem bottom 1 */
+  height: 289px;
+}
+
+.img-bottom-2 {
+  width: 407px; /* Tamanho específico para a imagem bottom 2 */
+  height: 289px;
 }
 
 /* Media Query para telas menores */

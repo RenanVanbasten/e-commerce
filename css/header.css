@@ -23,11 +23,7 @@ nav {
   box-sizing: border-box;
 }
 
-.header-container .nav-links li a[href="#Shop"] span img {
-  vertical-align: middle;
-}
-
-/* Ajuste no logo */
+/* Estilo para o logo */
 .logo {
   font-family: "Integral CF";
   font-size: 1.5rem;
@@ -36,19 +32,7 @@ nav {
   margin-left: 0;
 }
 
-/* Estilo para o menu-toggle e search-toggle (se necessário) */
-.menu-toggle,
-.search-toggle {
-  display: none;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
-}
-
 /* Adicionando hover no menu-toggle */
-.menu-toggle:hover {
-  background-color: #f0f0f0;
-}
 
 /* Estilo para links de navegação */
 .nav-links {
@@ -61,6 +45,9 @@ nav {
   flex: 1;
   justify-content: center;
 }
+
+ul li a span img {
+vertical-align: middle;}
 
 .nav-links a {
   color: black;
@@ -89,11 +76,8 @@ nav {
   background-color: #f0f0f0;
 }
 
-/* Mantém a cor do texto original ao passar o mouse */
-.modal-nav-links a:hover {
-  color: black;
-}
 
+/* Estilo para o input de pesquisa */
 input {
   width: 500px;
   height: 48px;
@@ -116,6 +100,7 @@ input {
   margin-right: 10px;
 }
 
+/* Estilo do modal */
 .modal {
   display: none;
   position: fixed;
@@ -168,36 +153,40 @@ input {
   cursor: pointer;
 }
 
+.menu-toggle {
+  display: none; /* Inicialmente oculto */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#hidden{
+  display: none;
+}
+/* Estilo responsivo para telas pequenas */
 @media (max-width: 768px) {
-  .nav-links, #input-header {
-    display: none;
+  .nav-links {
+    display: none; /* Oculta os links de navegação em telas pequenas */
   }
 
-  .menu-toggle,
-  .search-toggle,
-  .img-nav a {
-    display: block;
+  #input-header {
+    display: none; /* Oculta o input de pesquisa em telas pequenas */
   }
 
-  nav {
-    padding: 0 20px;
-    justify-content: space-between;
+  .menu-toggle{
+    display: block; /* Mostra o menu-toggle e search-toggle em telas pequenas */
   }
 
-  .logo {
-    margin-right: 20px;
+  #hidden{
+    display: flex; /* Mostra o menu-toggle e search-toggle em telas pequenas */
+    vertical-align: middle
   }
-
-  .menu-toggle {
-    display: block;
-    margin-right: 10px;
+  
+  .menu-toggle:hover {
+    background-color: #f0f0f0;
   }
-
-  .search-toggle {
-    display: block;
-    margin-right: 20px;
-  }
-
+  
+  /* Alinhamento do search-toggle ao lado dos ícones da img-nav */
   .img-nav {
     display: flex;
     align-items: center;

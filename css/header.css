@@ -30,6 +30,7 @@ nav {
   font-weight: bold; /* Peso da fonte */
   color: black; /* Cor do texto */
   margin-left: 0; /* Remove margem esquerda */
+  text-decoration: none;
 }
 
 /* Estilo para links de navegação */
@@ -144,7 +145,7 @@ input {
 }
 
 .close {
-  color: black; /* Cor do texto */
+  color: grey; /* Cor do texto */
   float: right; /* Alinha à direita */
   font-size: 28px; /* Tamanho da fonte */
   font-weight: bold; /* Peso da fonte */
@@ -155,7 +156,6 @@ input {
   display: none; /* Inicialmente oculto */
   padding: 10px; /* Espaçamento interno */
   border-radius: 5px; /* Bordas arredondadas */
-  transition: background-color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
 }
 
 #hidden {
@@ -183,7 +183,8 @@ input {
 
   .menu-toggle:hover {
     background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
-  }
+    transition: background-color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
+}
 
   /* Alinhamento do search-toggle ao lado dos ícones da img-nav */
   .img-nav {

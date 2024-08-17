@@ -1,7 +1,7 @@
 /* Estilos gerais para a seção .main */
 .main {
   width: 100%; /* Largura total */
-  max-width: 1440px; /* Largura máxima do contêiner */
+  
   margin: 0 auto; /* Centraliza horizontalmente */
   padding: 0; /* Remove padding */
   box-sizing: border-box; /* Inclui padding e border na largura total */

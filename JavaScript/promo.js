@@ -1,9 +1,8 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const closePromo = document.getElementById('close-promo');
-    const promoSection = document.querySelector('.promo');
-  
-    closePromo.addEventListener('click', function () {
-      promoSection.style.display = 'none';
-    });
-  });
-  
+document.addEventListener('DOMContentLoaded', () =>{
+  document.getElementById('close-promo').addEventListener('click', () => {
+    document.querySelector('.promo').style.display = 'none';
+  })
+})
+
+
+

@@ -53,6 +53,11 @@
   border: none; /* Remove a borda do botão */
   cursor: pointer; /* Cursor de ponteiro para indicar clicabilidade */
 }
+.subscribe button:hover{
+  color: white;
+  font-weight: bold;
+  background-color: rgba(245, 251, 245, 0.719) ;
+}
 
 .subscribe input[type="text"] {
   background-image: url('/assets/icons/mail-icon.svg'); /* Ícone de email */
@@ -60,6 +65,15 @@
   background-repeat: no-repeat; /* Não repete o ícone */
   background-position: 12px center; /* Posiciona o ícone dentro do campo de entrada */
   padding-left: 40px; /* Espaço interno à esquerda para o ícone */
+}
+
+.validation {
+  color: rgb(231, 33, 33);
+  font-weight: bolder;
+}
+
+.validation.ok{
+  color: rgb(18, 206, 18);
 }
 
 /* Estilos para telas menores que 768px */

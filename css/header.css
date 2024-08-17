@@ -142,6 +142,8 @@ input {
 
 .modal-nav-links a img {
   margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  width: 21px;
+  height: 21px;
 }
 
 .close {

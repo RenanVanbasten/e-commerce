@@ -66,9 +66,15 @@
   box-sizing: border-box; /* Inclui padding e border na largura total */
 }
 
-.footer-container-links h2 {
+.footer-container-links h2 a{
+  text-decoration: none;
   font-size: 1.2rem;
   margin-bottom: 10px;
+  color: #00000099;
+}
+
+.footer-container-links h2 a:hover{
+  text-decoration: underline;
 }
 
 .footer-container-links ul {
@@ -77,9 +83,14 @@
   margin: 0;
 }
 
-.footer-container-links li {
+.footer-container-links li a{
+  text-decoration: none;
   margin-bottom: 10px;
   color: #00000099;
+}
+
+.footer-container-links li a:hover{
+  text-decoration: underline;
 }
 
 .footer-divider {
@@ -110,13 +121,6 @@
   justify-content: flex-end; /* Alinha as imagens à direita */
   align-items: center;
 }
-
-.footer-container-cards-images  img:hover {
-  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
-}
-
-
 
 .footer-container-cards-images a {
   margin: 0; /* Remove a margem ao redor das imagens */

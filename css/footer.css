@@ -43,6 +43,13 @@
   gap: 10px;
 }
 
+.social-medias  img:hover {
+   transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+   border-radius: 50px;
+}
+
+
 .footer-container-links {
   flex: 1 1 65%; /* Ajusta para ocupar o espaço restante */
   display: flex;
@@ -103,6 +110,13 @@
   justify-content: flex-end; /* Alinha as imagens à direita */
   align-items: center;
 }
+
+.footer-container-cards-images  img:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+}
+
+
 
 .footer-container-cards-images a {
   margin: 0; /* Remove a margem ao redor das imagens */

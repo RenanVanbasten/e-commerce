@@ -71,6 +71,11 @@
   height: 40px; /* Tamanho dos controles */
 }
 
+.carousel-control:hover {
+  transform: scale(1.3); /* Aumenta o tamanho da imagem em 10% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+}
+
 .carousel::-webkit-scrollbar {
   display: none; /* Oculta a barra de rolagem */
 }
@@ -80,8 +85,21 @@
   flex: 0 0 auto; /* Impede o encolhimento ou expansão dos cartões */
 }
 
+.cartao-1:hover,
+.cartao-2:hover,
+.cartao-3:hover,
+.cartao-4:hover,
+.cartao-5:hover {
+  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+}
+
 /* Estilos para os cartões */
-.cartao-1, .cartao-2, .cartao-3, .cartao-4, .cartao-5 {
+.cartao-1,
+.cartao-2,
+.cartao-3,
+.cartao-4,
+.cartao-5 {
   flex: 0 0 30%; /* Cada cartão ocupa 30% da largura do contêiner */
   box-sizing: border-box; /* Inclui padding e borda na largura total */
   padding: 20px; /* Espaço interno */
@@ -164,7 +182,10 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra leve para destaque */
   }
 
-  .cartao-2, .cartao-3, .cartao-4, .cartao-5 {
+  .cartao-2,
+  .cartao-3,
+  .cartao-4,
+  .cartao-5 {
     display: none; /* Oculta os cartões restantes */
   }
 }

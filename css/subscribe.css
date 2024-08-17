@@ -68,6 +68,7 @@
 }
 
 .validation {
+  align-self: center;
   color: rgb(231, 33, 33);
   font-weight: bolder;
 }

@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card-content');
-    const estrelaCheia = './assets/icons/star.svg'; // Caminho para a imagem de estrela cheia
-    const meiaEstrela = './assets/icons/half-star.svg'; // Caminho para a imagem de meia estrela
+    const estrelaCheia = 'assets\icons\star.svg'; // Caminho para a imagem de estrela cheia
+    const meiaEstrela = 'assets\icons\half-star.svg'; // Caminho para a imagem de meia estrela
 
     cards.forEach(card => {
         const ratingNumberElement = card.querySelector('.rating-number');

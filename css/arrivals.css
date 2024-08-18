@@ -63,14 +63,6 @@
   margin-bottom: 10px; /* Adiciona um espaçamento abaixo do nome do produto de 10 pixels */
 }
 
-.rating {
-  margin-bottom: 10px; /* Adiciona um espaçamento abaixo da classificação de 10 pixels */
-}
-
-.stars {
-  color: #ffd700; /* Define a cor das estrelas como dourada */
-}
-
 .rating-number {
   font-size: 0.9em; /* Define o tamanho da fonte do número de avaliação como 0.9 vezes o tamanho da fonte raiz */
   color: #666; /* Define a cor do número de avaliação como cinza escuro */

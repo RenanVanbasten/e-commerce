@@ -71,6 +71,11 @@
   height: 40px; /* Tamanho dos controles */
 }
 
+.carousel-control:hover{
+  transform: scale(1.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .carousel::-webkit-scrollbar {
   display: none; /* Oculta a barra de rolagem */
 }

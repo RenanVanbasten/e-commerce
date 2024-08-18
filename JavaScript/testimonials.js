@@ -18,11 +18,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isLeft) {
           scrollAmount -= cardWidth;
           if (scrollAmount < 0) {
-            scrollAmount = carousel.scrollWidth / 2 - cardWidth;
+            scrollAmount = carousel.scrollWidth / 2 ;
           }
         } else {
           scrollAmount += cardWidth;
-          if (scrollAmount >= carousel.scrollWidth / 2) {
+          if (scrollAmount > carousel.scrollWidth / 2) {
             scrollAmount = 0;
           }
         }

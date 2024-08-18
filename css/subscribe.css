@@ -112,7 +112,8 @@
     flex-direction: column; /* Empilha título e conteúdo verticalmente */
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     padding: 20px; /* Ajusta o padding */
-    margin-top: -50px; /* Ajusta a margem superior para sobreposição */
+    margin-top: -145px; /* Ajusta a margem superior para sobreposição */
+    width: 430px;
   }
 
   .subscribe h1 {

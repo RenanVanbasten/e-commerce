@@ -60,7 +60,7 @@
 }
 
 .subscribe input[type="text"] {
-  background-image: url('./assets/icons/mail-icon.svg'); /* Ícone de email */
+  background-image: url('assets\icons\mail-icon.svg'); /* Ícone de email */
   background-size: 20px 20px; /* Tamanho do ícone */
   background-repeat: no-repeat; /* Não repete o ícone */
   background-position: 12px center; /* Posiciona o ícone dentro do campo de entrada */

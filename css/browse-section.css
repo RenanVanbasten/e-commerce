@@ -30,7 +30,6 @@
 .browse-style-container {
   background-color: white;
   width: 100%; 
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,41 +58,62 @@
 
 .browse-style-grid {
   display: flex; 
-  flex-direction: column;
-  gap: 20px; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px; 
   width: 100%; 
 }
 
-.top-row, .bottom-row {
+.card-browse {
+position: relative;
+cursor: pointer;
+flex-grow: 1;
+}
+
+.card-browse h3 {
+  font-family: "Satoshi";
+  font-weight: bold;
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
+}
+
+.card-2-browse{
+  flex-grow: 2;
   position: relative;
-  display: flex; 
-  width: 100%;
-  gap: 20px; 
-  justify-content: space-between; 
-  padding: 0 20px;
-  box-sizing: border-box;
+  cursor: pointer;
 }
 
-.top-row img, .bottom-row img {
+.card-browse img,
+.card-2-browse img {
   border-radius: 20px;
-  object-fit: cover; 
+  border: none;
+  width: 100%;
+  height: auto;
 }
 
-.img-top-1, .img-bottom-2 {
-  width: 407px; 
-  height: 289px;
+.card-2-browse h3 {
+  font-weight: bold;
+  font-family: "Satoshi";
+  font-size: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 30px;
 }
-
-.img-top-2, .img-bottom-1 {
-  width: 684px;
-  height: 289px;
-}
-
-.top-row img:hover, .bottom-row img:hover {
+.card-2-browse:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   transform: scale(1.1); 
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
+
+.card-browse:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.1); 
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -109,15 +129,11 @@
     flex-direction: column; 
     gap: 10px;
   }
-
-  .top-row, .bottom-row {
-    flex-direction: column;
-    gap: 10px; 
-    padding: 0;
-  }
-
-  .img-top-1, .img-top-2, .img-bottom-1, .img-bottom-2 {
-    width: 100%; 
-    height: 150px;
+  
+  .browse-style-grid img {
+    width: 100%; /* Garante que as imagens ocupem toda a largura disponível */
+    height: 150px; /* Define a altura fixa para as imagens */
+    object-fit: cover; /* Ajusta o conteúdo da imagem para preencher o container */
+    border-radius: 20px; /* Mantém as bordas arredondadas */
   }
 }

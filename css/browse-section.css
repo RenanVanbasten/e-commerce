@@ -42,98 +42,82 @@
   background-color: #F0F0F0; 
   border-radius: 15px;
   max-width: 1200px;
-  width: 100%;
   padding: 40px 20px;
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
-  display: flex; /* Usando flexbox para layout */
-  flex-direction: column; /* Alinha itens em coluna */
-  align-items: center; /* Centraliza horizontalmente */
+  box-sizing: border-box; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
 }
 
-/* Estilo do título dentro da seção */
 .browse-style h1 {
-  font-family: "Integral CF", sans-serif; /* Fonte do título */
-  font-size: 2.5rem; /* Tamanho da fonte */
-  margin-bottom: 40px; /* Margem inferior */
-  text-align: center; /* Centraliza o texto */
-  padding: 1rem; /* Espaçamento interno */
+  font-family: "Integral CF", sans-serif; 
+  font-size: 2.5rem;
+  margin-bottom: 40px; 
+  text-align: center; 
+  padding: 1rem;
 }
 
-.img-title{
-  font-family: "Satoshi";
-  font-size: 2rem;
-  position: absolute;
-  font-weight: bold;
-  z-index: 1000;
-}
-
-/* Estilo do grid de imagens */
 .browse-style-grid {
-  display: flex; /* Usa flexbox para layout */
-  flex-direction: column; /* Alinha itens em coluna */
-  gap: 20px; /* Espaçamento entre itens */
-  width: 100%; /* Largura total */
+  display: flex; 
+  flex-direction: column;
+  gap: 20px; 
+  width: 100%; 
 }
 
-/* Estilo das linhas de imagens */
 .top-row, .bottom-row {
   position: relative;
-  display: flex; /* Usa flexbox para layout */
-  width: 100%; /* Largura total */
-  gap: 20px; /* Espaçamento entre itens */
-  justify-content: space-between; /* Espaça os itens igualmente */
-  padding: 0 20px; /* Espaçamento interno */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  display: flex; 
+  width: 100%;
+  gap: 20px; 
+  justify-content: space-between; 
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-/* Estilo das imagens dentro das linhas */
 .top-row img, .bottom-row img {
-  border-radius: 20px; /* Bordas arredondadas */
-  object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+  border-radius: 20px;
+  object-fit: cover; 
 }
 
-/* Tamanhos específicos para as imagens */
 .img-top-1, .img-bottom-2 {
-  width: 407px; /* Largura específica */
-  height: 289px; /* Altura específica */
+  width: 407px; 
+  height: 289px;
 }
 
 .img-top-2, .img-bottom-1 {
-  width: 684px; /* Largura específica */
-  height: 289px; /* Altura específica */
+  width: 684px;
+  height: 289px;
 }
 
-/* Adiciona efeito de zoom e sombra nas imagens ao passar o mouse */
 .top-row img:hover, .bottom-row img:hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
-  transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Media Query para telas menores */
 @media (max-width: 768px) {
+
   .browse-style {
-    padding: 20px; /* Ajusta o padding para telas menores */
+    padding: 20px; 
   }
 
   .browse-style h1 {
-    font-size: 2rem; /* Ajusta o tamanho da fonte do título */
+    font-size: 2rem; 
   }
 
   .browse-style-grid {
-    flex-direction: column; /* Alinha o grid em coluna */
-    gap: 10px; /* Reduz o espaçamento entre itens */
+    flex-direction: column; 
+    gap: 10px;
   }
 
   .top-row, .bottom-row {
-    flex-direction: column; /* Alinha as linhas em coluna */
-    gap: 10px; /* Reduz o espaçamento entre itens */
-    padding: 0; /* Remove o padding */
+    flex-direction: column;
+    gap: 10px; 
+    padding: 0;
   }
 
   .img-top-1, .img-top-2, .img-bottom-1, .img-bottom-2 {
-    width: 100%; /* Ajusta a largura para ocupar toda a largura disponível */
-    height: 150px; /* Define a altura das imagens */
-    max-width: none; /* Remove a restrição de largura máxima */
+    width: 100%; 
+    height: 150px;
   }
 }

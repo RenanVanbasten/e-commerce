@@ -150,6 +150,7 @@ input {
 }
 
 .modal-nav-links a {
+  font-family: "Satoshi";
   font-size: 18px;
   color: black; 
   text-decoration: none;

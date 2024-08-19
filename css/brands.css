@@ -3,21 +3,20 @@
   background-color: black;
 }
 .brands {
-  max-width: 1440px; /* Define a largura máxima igual à da .main */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 10px 0; /* Adiciona um pouco de espaçamento acima e abaixo */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  max-width: 1440px; 
+  margin: 0 auto; 
+  padding: 10px 0;
+  box-sizing: border-box; 
 }
 
 .brands-content {
-  max-width: 1200px; /* Define a largura máxima do conteúdo do nav */
-  margin: 0 auto; /* Centraliza o nav horizontalmente dentro da .header-container */
+  max-width: 1200px; 
+  margin: 0 auto; 
   display: flex;
-  justify-content: space-between; /* Espaça uniformemente os itens dentro do nav */
-  align-items: center; /* Alinha verticalmente o conteúdo */
-  width: 100%; /* Ocupa toda a largura disponível */
-  padding: 0; /* Remove padding lateral */
-  box-sizing: border-box; /** Inclui padding e borda na largura total */
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0; 
+  box-sizing: border-box; 
 }
 
 .brands img {
@@ -30,12 +29,12 @@
   .brands-content {
     display: flex;
     justify-content: space-around;
-    max-width: 100%; /* Garante que a grid ocupe toda a largura disponível */
+    max-width: 100%; 
   }
 
   .brands img {
-    width: 15%; /* Ajusta a largura das imagens automaticamente */
-    aspect-ratio: 3/1; /* Mantém a proporção das imagens */
-    object-fit: contain; /* Mantém a proporção das imagens dentro do container */
+    width: 15%; 
+    aspect-ratio: 3/1;
+    object-fit: contain;
   }
 }

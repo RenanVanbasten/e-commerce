@@ -26,146 +26,140 @@
   font-style: normal;
 }
 
-/* Estilo para a seção new-arrivals */
 .new-arrivals {
-  width: 100%; /* Define a largura da seção para ocupar 100% do elemento pai */
-  background-color: white; /* Define a cor de fundo como branco */
-  padding: 20px; /* Adiciona um espaçamento interno de 20 pixels */
-  text-align: center; /* Alinha o texto no centro da seção */
+  width: 100%; 
+  background-color: white; 
+  padding: 20px; 
+  text-align: center;
 }
 
-/* Estilo do título na seção new-arrivals */
 .new-arrivals h1 {
-  font-family: "Integral CF", sans-serif; /* Define a fonte do título como "Integral CF" com fallback para sans-serif */
-  font-size: 2.5rem; /* Define o tamanho da fonte como 2.5 vezes o tamanho da fonte raiz */
-  margin-bottom: 40px; /* Adiciona um espaçamento abaixo do título de 40 pixels */
+  font-family: "Integral CF", sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
 
-/* Container de cards */
 .cards-container {
-  display: flex; /* Utiliza o layout flexível para os itens dentro do container */
-  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha quando necessário */
-  gap: 20px; /* Define um espaçamento de 20 pixels entre os itens */
-  justify-content: center; /* Alinha os itens no centro do container */
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 20px;
+  justify-content: center;
 }
 
-/* Cada card */
 .card {
-  flex: 1 1 calc(25% - 20px); /* Define que o card ocupa 25% da largura do container menos 20 pixels (espaço entre cards) */
-  box-sizing: border-box; /* Inclui o padding e a borda nas dimensões totais do card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Define uma transição suave para transformação e sombra ao passar o mouse */
-  overflow: hidden; /* Oculta qualquer conteúdo que ultrapasse os limites do card */
-  background-color: #fff; /* Define a cor de fundo do card como branco */
-  border-radius: 10px; /* Adiciona bordas arredondadas com raio de 10 pixels */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Define uma sombra sutil ao redor do card */
+  flex: 1 1 calc(25% - 20px);
+  box-sizing: border-box;
+  overflow: hidden; 
+  background-color: #fff;
+  border-radius: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .card:hover {
-  transform: scale(1.05); /* Aumenta o tamanho do card em 5% quando o mouse está sobre ele */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-hidden {
-  display: none; /* Oculta elementos com essa classe */
+  display: none;
 }
 
 .card-visible {
-  display: block; /* Exibe elementos com essa classe como blocos */
+  display: block; 
 }
 
-/* Garantir que a imagem se ajuste corretamente dentro do card */
 .card-image img {
-  width: 100%; /* Define a largura da imagem para 100% da largura do elemento pai (card) */
-  height: auto; /* Mantém a proporção da imagem ao ajustar a altura automaticamente */
-  display: block; /* Remove o espaço extra abaixo da imagem */
+  width: 100%; 
+  height: auto; 
+  display: block;
 }
 
-/* Garantir que o conteúdo do card fique bem posicionado */
 .card-content {
-  padding: 15px; /* Adiciona um espaçamento interno de 15 pixels */
-  text-align: center; /* Alinha o texto no centro do card */
+  padding: 15px; 
+  text-align: center;
 }
 
 .product-name {
-  font-size: 1.2em; /* Define o tamanho da fonte do nome do produto como 1.2 vezes o tamanho da fonte raiz */
-  margin-bottom: 10px; /* Adiciona um espaçamento abaixo do nome do produto de 10 pixels */
+  font-size: 1.2em;
+  margin-bottom: 10px;
 }
 
 .stars {
-  font-size: 50px; /* Ajuste o tamanho conforme necessário */
-  color: gold;     /* Cor das estrelas */
+  font-size: 50px;
+  color: gold;
 }
 
 .rating-number {
-  font-size: 0.9em; /* Define o tamanho da fonte do número de avaliação como 0.9 vezes o tamanho da fonte raiz */
-  color: #666; /* Define a cor do número de avaliação como cinza escuro */
+  font-size: 0.9em;
+  color: #666;
 }
 
 .price {
-  font-size: 1.1em; /* Define o tamanho da fonte do preço como 1.1 vezes o tamanho da fonte raiz */
+  font-size: 1.1em;
 }
 
 .current-price {
-  color: #333; /* Define a cor do preço atual como cinza escuro */
-  font-weight: bold; /* Torna o preço atual em negrito */
+  color: #333;
+  font-weight: bold;
 }
 
 .old-price {
-  color: #888; /* Define a cor do preço antigo como cinza claro */
-  text-decoration: line-through; /* Adiciona uma linha através do preço antigo */
-  margin-left: 10px; /* Adiciona um espaçamento à esquerda do preço antigo de 10 pixels */
+  color: #888;
+  text-decoration: line-through;
+  margin-left: 10px;
 }
 
 .discount {
-  color: #e74c3c; /* Define a cor do desconto como vermelho */
-  margin-left: 10px; /* Adiciona um espaçamento à esquerda do desconto de 10 pixels */
+  color: #e74c3c;
+  margin-left: 10px;
 }
 
 /* Estilo do botão */
 .new-arrivals button {
-  width: 10%; /* Define a largura do botão como 10% da largura do elemento pai */
-  background-color: white; /* Define a cor de fundo do botão como branco */
-  border: 1px solid #ccc; /* Adiciona uma borda cinza clara ao botão */
-  border-radius: 30px; /* Adiciona bordas arredondadas com raio de 30 pixels */
-  padding: 10px 20px; /* Adiciona um espaçamento interno de 10 pixels em cima e embaixo, e 20 pixels à esquerda e à direita */
-  font-size: 1rem; /* Define o tamanho da fonte do botão como igual ao tamanho da fonte raiz */
-  color: black; /* Define a cor do texto do botão como preto */
-  cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
-  margin-top: 20px; /* Adiciona um espaçamento acima do botão de 20 pixels */
-  display: inline-block; /* Faz com que o botão se comporte como um bloco em linha */
-  text-align: center; /* Alinha o texto no centro do botão */
-  font-family: "Satoshi", sans-serif; /* Define a fonte do texto do botão como "Satoshi" com fallback para sans-serif */
-  transition: background-color 0.4s ease; /* Define uma transição suave para a cor de fundo ao passar o mouse */
+  width: 10%;
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 30px; 
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  color: black; 
+  cursor: pointer;
+  margin-top: 20px; 
+  display: inline-block;
+  text-align: center;
+  font-family: "Satoshi", sans-serif;
 }
 
 button:hover {
-  background-color: #9da8b5; /* Muda a cor de fundo do botão para um tom cinza azulado ao passar o mouse */
+  transition: background-color 0.4s ease;
+  background-color: #9da8b5; 
 }
 
-/* Estilos responsivos para telas pequenas */
+
 @media (max-width: 768px) {
   .cards-container {
-    display: grid; /* Utiliza layout grid para os itens dentro do container */
-    grid-template-columns: repeat(2, 1fr); /* Define duas colunas com largura igual */
-    gap: 20px; /* Define um espaçamento de 20 pixels entre os cards */
-    justify-content: center; /* Centraliza os cards no grid */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    justify-content: center;
   }
 
   .card {
-    flex: 1 1 calc(50% - 20px); /* Ajusta os cards para ocupar 50% da largura do container menos 20 pixels (espaço entre cards) */
-    max-width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+    flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
   }
 
   .cards-container .card:nth-child(n+3) {
-    display: none; /* Oculta os cards adicionais a partir do terceiro card */
+    display: none;
   }
 
   .cards-container .card.card-visible {
-    display: block; /* Exibe os cards que têm a classe card-visible */
+    display: block;
   }
 
-  .expandable-section button {
-    width: 100%; /* Define que o botão ocupa toda a largura disponível em telas pequenas */
-    margin-top: 20px; /* Adiciona um espaçamento acima do botão de 20 pixels */
+  .nre-arrivals button {
+    width: 100%;
+    margin-top: 20px;
   }
 }

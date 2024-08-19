@@ -27,85 +27,76 @@
 }
 
 
-/* Estilo do header */
 .header {
-  width: 100%; /* Largura total */
-  background-color: white; /* Cor de fundo branca */
+  width: 100%; 
+  background-color: white;
 }
 
 .header-container {
-  max-width: 1440px; /* Largura máxima */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 10px 0; /* Espaçamento vertical */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 10px 0;
+  box-sizing: border-box; 
 }
 
-/* Estilo do nav */
 nav {
-  max-width: 1200px; /* Largura máxima para o nav */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  display: flex; /* Usa flexbox para o layout */
-  justify-content: space-between; /* Espaça itens entre os extremos */
-  align-items: center; /* Alinha itens verticalmente ao centro */
-  width: 100%; /* Largura total */
-  padding: 0; /* Remove padding */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0; 
+  box-sizing: border-box; 
 }
 
-/* Estilo para o logo */
 .logo {
-  font-family: "Integral CF"; /* Fonte do logo */
-  font-size: 1.5rem; /* Tamanho da fonte */
-  font-weight: bold; /* Peso da fonte */
-  color: black; /* Cor do texto */
-  margin-left: 0; /* Remove margem esquerda */
+  font-family: "Integral CF"; 
+  font-size: 1.5rem; 
+  font-weight: bold;
+  color: black;
+  margin-left: 0;
   text-decoration: none;
 }
 
-/* Estilo para links de navegação */
 .nav-links {
-  list-style: none; /* Remove marcação da lista */
-  display: flex; /* Usa flexbox para o layout */
-  flex-direction: row; /* Alinha itens em linha */
-  font-family: "Satoshi"; /* Fonte dos links */
-  margin: 0; /* Remove margens */
-  padding: 0; /* Remove padding */
-  flex: 1; /* Permite que o container expanda */
-  justify-content: center; /* Centraliza os links */
+  list-style: none; 
+  display: flex; 
+  flex-direction: row;
+  font-family: "Satoshi";
+  margin: 0; 
+  padding: 0;
+  flex: 1;
+  justify-content: center;
 }
 
 ul li a span img {
-  vertical-align: middle; /* Alinha verticalmente a imagem */
+  vertical-align: middle; 
 }
 
 .nav-links a {
-  color: black; /* Cor dos links */
-  font-size: 14px; /* Tamanho da fonte */
-  font-weight: 400; /* Peso da fonte */
-  padding: 5px 10px; /* Espaçamento interno dos links */
-  text-decoration: none; /* Remove sublinhado dos links */
-  white-space: nowrap; /* Impede a quebra de linha */
-  transition: background-color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
+  color: black; 
+  font-size: 14px;
+  font-weight: 400; 
+  padding: 5px 10px;
+  text-decoration: none;
+  white-space: nowrap; 
 }
 
-/* Estilo dos ícones e links */
 .img-nav a,
 .modal-nav-links a {
-  display: flex; /* Usa flexbox para o layout interno */
-  align-items: center; /* Alinha itens verticalmente ao centro */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  transition: background-color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
+  display: flex; 
+  align-items: center; 
+  padding: 10px; 
+  border-radius: 5px;
 }
 
-/* Efeito de hover no background dos ícones e texto */
 .img-nav a:hover,
 .nav-links a:hover,
 .modal-nav-links a:hover {
-  background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
+  background-color: #f0f0f0; 
+  transition: background-color 0.3s ease-in-out;
 }
 
-/* Estilo para o input de pesquisa */
 input {
   width: 500px;
   height: 48px;
@@ -119,113 +110,110 @@ input {
 }
 
 .img-nav {
-  display: flex; /* Usa flexbox para o layout */
-  align-items: center; /* Alinha itens verticalmente ao centro */
-  gap: 10px; /* Espaçamento entre os ícones */
+  display: flex; 
+  align-items: center;
+  gap: 10px; 
 }
 
 .img-nav a {
-  margin-right: 10px; /* Margem à direita dos ícones */
+  margin-right: 10px;
 }
 
 /* Estilo do modal */
 .modal {
-  display: none; /* Inicialmente oculto */
-  position: fixed; /* Posicionamento fixo */
-  z-index: 1000; /* Z-index alto para sobrepor outros elementos */
-  left: 0; /* Alinha à esquerda */
-  top: 0; /* Alinha ao topo */
-  width: 100%; /* Largura total */
-  height: 100%; /* Altura total */
-  background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com opacidade */
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
-  background-color: white; /* Cor de fundo branca */
-  margin: 15% auto; /* Margem automática para centralizar verticalmente */
-  padding: 20px; /* Espaçamento interno */
-  border-radius: 10px; /* Bordas arredondadas */
-  width: 80%; /* Largura relativa ao modal */
-  max-width: 400px; /* Largura máxima */
-  text-align: left; /* Alinha o texto à esquerda */
+  background-color: white; 
+  margin: 15% auto; 
+  padding: 20px; 
+  border-radius: 10px; 
+  max-width: 400px; 
+  text-align: left;
 }
 
 .modal-nav-links {
-  list-style: none; /* Remove marcação da lista */
-  padding: 0; /* Remove padding */
+  list-style: none; 
+  padding: 0;
 }
 
 .modal-nav-links li {
-  margin: 10px 0; /* Margem vertical entre itens */
+  margin: 10px 0; 
 }
 
 .modal-nav-links a {
-  font-size: 18px; /* Tamanho da fonte */
-  color: black; /* Cor do texto */
-  text-decoration: none; /* Remove sublinhado dos links */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
-  display: flex; /* Usa flexbox para o layout interno */
-  align-items: center; /* Alinha itens verticalmente ao centro */
+  font-size: 18px;
+  color: black; 
+  text-decoration: none;
+  padding: 10px; 
+  border-radius: 5px; 
+  display: flex; 
+  align-items: center; 
 }
 
 .modal-nav-links a img {
-  margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+  margin-right: 10px; 
   width: 21px;
   height: 21px;
 }
 
 .close {
-  color: grey; /* Cor do texto */
-  float: right; /* Alinha à direita */
-  font-size: 28px; /* Tamanho da fonte */
-  font-weight: bold; /* Peso da fonte */
-  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  color: grey;
+  float: right; 
+  font-size: 28px; 
+  font-weight: bold; 
+  cursor: pointer;
 }
 
 .menu-toggle {
-  display: none; /* Inicialmente oculto */
-  padding: 10px; /* Espaçamento interno */
-  border-radius: 5px; /* Bordas arredondadas */
+  display: none; 
+  padding: 10px; 
+  border-radius: 5px; 
 }
 
 #hidden {
-  display: none; /* Inicialmente oculto */
+  display: none;
 }
 
-/* Estilo responsivo para telas pequenas */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Oculta os links de navegação em telas pequenas */
+    display: none;
   }
 
   #input-header {
-    display: none; /* Oculta o input de pesquisa em telas pequenas */
+    display: none; 
   }
 
   .menu-toggle {
-    display: block; /* Mostra o menu-toggle em telas pequenas */
+    display: block;
   }
 
   #hidden {
-    display: flex; /* Mostra o menu-toggle e search-toggle em telas pequenas */
-    vertical-align: middle; /* Alinha verticalmente o conteúdo */
+    display: flex;
+    vertical-align: middle;
   }
 
   .menu-toggle:hover {
-    background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
-    transition: background-color 0.3s ease-in-out; /* Transição suave para a cor de fundo */
+    background-color: #f0f0f0; 
+    transition: background-color 0.3s ease-in-out; 
 }
 
-  /* Alinhamento do search-toggle ao lado dos ícones da img-nav */
   .img-nav {
-    display: flex; /* Usa flexbox para o layout */
-    align-items: center; /* Alinha itens verticalmente ao centro */
-    margin-left: auto; /* Alinha à direita */
-    gap: 5px; /* Diminui o espaçamento entre os ícones */
+    display: flex; 
+    align-items: center;
+    margin-left: auto;
+    gap: 5px;
   }
 
   .img-nav a {
-    margin-right: 5px; /* Diminui o espaço adicional dos ícones */
+    margin-right: 5px;
   }
 }

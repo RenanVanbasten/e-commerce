@@ -27,189 +27,175 @@
 }
 
 
-/* Estilos gerais para a seção .main */
 .main {
-  width: 100%; /* Largura total */
-  
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 0; /* Remove padding */
-  box-sizing: border-box; /* Inclui padding e border na largura total */
-  display: flex; /* Usa flexbox para o layout */
-  align-items: center; /* Centraliza verticalmente */
-  justify-content: center; /* Centraliza horizontalmente */
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 0; 
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Estilo da .main-content */
 .main-content {
-  display: flex; /* Usa flexbox para o layout */
-  width: 100%; /* Largura total */
-  max-width: 1200px; /* Largura máxima do conteúdo */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  box-sizing: border-box; /* Inclui padding e border na largura total */
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-/* Estilo da .text-content */
 .text-content {
-  flex: 1; /* Ocupa a largura disponível na .main-content */
-  padding-right: 20px; /* Espaço entre o texto e a imagem */
-  box-sizing: border-box; /* Inclui padding e border na largura total */
-  display: flex; /* Usa flexbox para o layout interno */
-  flex-direction: column; /* Empilha elementos verticalmente */
-  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  flex: 1;
+  padding-right: 20px; 
+  box-sizing: border-box; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
 }
 
-/* Estilo do texto dentro da .text-content */
 .text-wrapper {
-  display: flex; /* Usa flexbox para o layout interno */
-  flex-direction: column; /* Empilha elementos verticalmente */
-  gap: 20px; /* Espaçamento entre os elementos */
+  display: flex; 
+  flex-direction: column; 
+  gap: 20px; 
 }
 
 .text-wrapper h1 {
-  font-family: "Integral CF", sans-serif; /* Fonte do título */
-  font-size: 3.9rem; /* Tamanho da fonte */
-  line-height: 1.2; /* Altura da linha */
-  margin-bottom: 20px; /* Margem inferior */
+  font-family: "Integral CF", sans-serif; 
+  font-size: 3.9rem; 
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 .text-wrapper h2 {
-  font-size: 1rem; /* Tamanho da fonte */
-  line-height: 1.4; /* Altura da linha */
-  margin-bottom: 20px; /* Margem inferior */
-  font-family: "Satoshi", sans-serif; /* Fonte do subtítulo */
-  color: #00000099; /* Cor do texto */
-  font-weight: 400; /* Peso da fonte */
+  font-size: 1rem; 
+  line-height: 1.4; 
+  margin-bottom: 20px;
+  font-family: "Satoshi", sans-serif;
+  color: #00000099;
+  font-weight: 400;
 }
 
 .hero {
-  font-size: 1rem; /* Tamanho da fonte do botão */
-  padding: 15px 30px; /* Espaçamento interno */
-  background-color: #000000; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  border: none; /* Remove borda */
-  border-radius: 30px; /* Bordas arredondadas */
-  cursor: pointer; /* Cursor de ponteiro */
-  margin-bottom: 20px; /* Margem inferior */
-  width: 12rem; /* Largura do botão */
-  transition: background-color 0.4s ease; /* Transição suave para a cor de fundo */
+  font-size: 1rem;
+  padding: 15px 30px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 12rem;
 }
 
 button:hover {
-  background-color: #9da8b5; /* Cor de fundo ao passar o mouse */
+  transition: background-color 0.4s ease;
+  background-color: #9da8b5;
 }
 
 .info-content {
-  display: flex; /* Usa flexbox para o layout */
-  gap: 10px; /* Espaçamento entre os itens */
-  margin-top: 20px; /* Margem superior */
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .info-content > div {
-  padding: 15px; /* Espaçamento interno */
-  background-color: #f0f0f0; /* Cor de fundo */
-  text-align: left; /* Alinha o texto à esquerda */
-  position: relative; /* Necessário para a linha vertical */
+  padding: 15px;
+  background-color: #f0f0f0;
+  text-align: left; 
+  position: relative;
 }
 
 .info-content h2 {
-  font-family: "Satoshi", sans-serif; /* Fonte do título */
-  font-size: 2.5rem; /* Tamanho da fonte */
-  font-weight: 700; /* Peso da fonte */
+  font-family: "Satoshi", sans-serif;
+  font-size: 2.5rem; 
+  font-weight: 700;
 }
 
 .info-content h3 {
-  font-family: "Satoshi", sans-serif; /* Fonte do subtítulo */
-  font-weight: 400; /* Peso da fonte */
-  font-size: 0.9rem; /* Tamanho da fonte */
-  color: #00000099; /* Cor do texto */
+  font-family: "Satoshi", sans-serif;
+  font-weight: 400; 
+  font-size: 0.9rem;
+  color: #00000099;
 }
 
-/* Linha vertical entre as divs da .info-content */
 .info-content > div:not(:last-child)::after {
-  content: ""; /* Cria um conteúdo vazio para a linha */
-  position: absolute; /* Posiciona a linha absolutamente */
-  top: 0; /* Alinha ao topo */
-  bottom: 0; /* Alinha à base */
-  right: 0; /* Alinha à direita */
-  width: 1px; /* Largura da linha */
-  background-color: #ccc; /* Cor da linha */
+  content: "";
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  right: 0;
+  width: 1px;
+  background-color: #ccc;
 }
 
-/* Estilo da imagem */
 .main-content img {
-  flex: 1; /* Ocupa a largura disponível na .main-content */
-  width: 100%; /* Ajusta a largura da imagem para preencher seu contêiner */
-  height: auto; /* Mantém a proporção da imagem */
+  flex: 1;
+  width: 100%;
+  height: auto;
 }
 
-/* Estilo responsivo para telas pequenas */
 @media (max-width: 768px) {
-  .main {
-    flex-direction: column; /* Empilha elementos verticalmente */
-    align-items: center; /* Centraliza horizontalmente */
-    max-width: 768px; /* Largura máxima do contêiner */
-  }
-
+  
   .main-content {
-    flex-direction: column; /* Empilha .text-content e a imagem verticalmente */
-    width: 100%; /* Ajusta a largura para 100% */
+    flex-direction: column;
+    width: 100%;
   }
 
   .text-content {
-    padding: 0 16px; /* Ajusta o padding */
-    width: 100%; /* Ocupa toda a largura disponível */
-    text-align: justify; /* Justifica o texto */
+    padding: 0 16px;
+    width: 100%;
+    text-align: justify;
   }
 
   .text-content h1 {
-    font-size: 2.2rem; /* Ajusta o tamanho do título */
-    line-height: 1; /* Ajusta a altura da linha */
-    text-align: left; /* Alinha o texto à esquerda */
-    width: 100%; /* Ocupa toda a largura disponível */
-    margin-top: 20px; /* Margem superior */
-    margin-bottom: 5px; /* Margem inferior */
+    font-size: 2.2rem;
+    line-height: 1;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   .text-content h2 {
-    text-align: justify; /* Justifica o texto */
-    margin-top: 5px; /* Margem superior */
-    margin-bottom: 15px; /* Margem inferior */
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 15px;
   }
 
   .hero {
-    width: 100%; /* Largura total do botão */
-    padding: 16px; /* Ajusta o padding do botão */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
-    margin-bottom: 10px; /* Margem inferior */
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box; 
+    margin-bottom: 10px;
   }
 
   .info-content {
-    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte */
-    width: 100%; /* Largura total */
-    justify-content: space-between; /* Espaça os itens */
-    gap: 10px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; 
+    width: 100%; 
+    justify-content: space-between;
+    gap: 10px;
   }
 
   .info-content .content-1,
   .info-content .content-2 {
-    flex: 1 1 calc(50% - 10px); /* Ajusta a largura dos itens */
-    padding: 10px; /* Ajusta o padding das divs */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+    flex: 1 1 calc(50% - 10px);
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .info-content .content-1 {
-    border-right: 1px solid #ccc; /* Adiciona borda direita */
+    border-right: 1px solid #ccc;
   }
 
   .info-content .content-3 {
-    text-align: center; /* Centraliza o texto */
-    margin-top: 10px; /* Margem superior */
-    margin-left: 6rem; /* Margem esquerda */
-    padding: 10px; /* Ajusta o padding da div */
+    text-align: center; 
+    margin-top: 10px; 
+    margin-left: 6rem; 
+    padding: 10px;
   }
 
   .main-content img {
-    width: 100%; /* Largura total da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100%; 
+    height: auto;
   }
 }

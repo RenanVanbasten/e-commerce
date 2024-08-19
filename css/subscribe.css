@@ -29,58 +29,58 @@
 
 /* Estilos para a seção de inscrição */
 .subscribe {
-  background-color: #000000; /* Cor de fundo preta */
-  border-radius: 20px; /* Bordas arredondadas */
-  display: flex; /* Usa flexbox para layout */
-  justify-content: space-between; /* Espaça o título e o conteúdo */
-  align-items: center; /* Alinha itens verticalmente ao centro */
-  padding: 20px; /* Espaço interno */
-  width: 100%; /* Largura total */
-  max-width: 1200px; /* Largura máxima */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
-  position: relative; /* Necessário para z-index */
-  margin-top: -100px; /* Move a seção para cima para sobrepor outras seções */
+  background-color: #000000; 
+  border-radius: 20px; 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px; 
+  width: 100%; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+  box-sizing: border-box; 
+  position: relative; 
+  margin-top: -100px; 
   z-index: 100; /* Garante que a seção esteja acima das outras */
 }
 
 .subscribe h1 {
-  font-family: "Integral CF", sans-serif; /* Fonte do título */
-  font-size: 40px; /* Tamanho da fonte */
-  font-weight: 700; /* Peso da fonte em negrito */
-  line-height: 45px; /* Altura da linha */
-  text-align: left; /* Alinha o texto à esquerda */
-  padding: 30px; /* Espaçamento interno */
-  color: white; /* Cor do texto */
-  flex: 1; /* Faz com que o título ocupe o espaço disponível */
+  font-family: "Integral CF", sans-serif;
+  font-size: 40px; 
+  font-weight: 700;
+  line-height: 45px; 
+  text-align: left;
+  padding: 30px;
+  color: white;
+  flex: 1; 
 }
 
 .subscribe-content {
-  display: flex; /* Usa flexbox para layout */
-  flex-direction: column; /* Empilha input e botão verticalmente */
-  align-items: flex-end; /* Alinha os itens à direita */
-  gap: 10px; /* Espaço entre os itens */
-  padding-right: 30px; /* Espaçamento à direita */
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+  gap: 10px; 
+  padding-right: 30px;
 }
 
 .subscribe input,
 .subscribe button {
-  width: 349px; /* Largura dos elementos */
-  height: 48px; /* Altura dos elementos */
-  padding: 12px 16px; /* Espaço interno */
-  border-radius: 24px; /* Bordas arredondadas */
-  background-color: #FFFFFF; /* Cor de fundo branca */
-  border: 1px solid #CCCCCC; /* Borda cinza clara */
-  margin: 5px 0; /* Espaçamento vertical */
+  width: 349px;
+  height: 48px; 
+  padding: 12px 16px; 
+  border-radius: 24px;
+  background-color: #FFFFFF; 
+  border: 1px solid #CCCCCC; 
+  margin: 5px 0; 
 }
 
 .subscribe input::placeholder {
-  color: #999999; /* Cor do placeholder */
+  color: #999999; 
 }
 
 .subscribe button {
-  border: none; /* Remove a borda do botão */
-  cursor: pointer; /* Cursor de ponteiro para indicar clicabilidade */
+  border: none; 
+  cursor: pointer; 
 }
 .subscribe button:hover{
   color: white;
@@ -89,11 +89,11 @@
 }
 
 .subscribe input[type="text"] {
-  background-image: url('assets\icons\mail-icon.svg'); /* Ícone de email */
-  background-size: 20px 20px; /* Tamanho do ícone */
-  background-repeat: no-repeat; /* Não repete o ícone */
-  background-position: 12px center; /* Posiciona o ícone dentro do campo de entrada */
-  padding-left: 40px; /* Espaço interno à esquerda para o ícone */
+  background-image: url('../assets/icons/mail-icon.svg');
+  background-size: 20px 20px; 
+  background-repeat: no-repeat; 
+  background-position: 12px center; 
+  padding-left: 40px;
 }
 
 .validation {
@@ -127,7 +127,7 @@
   .subscribe-content {
     align-items: center; /* Centraliza os itens horizontalmente */
     gap: 5px; /* Reduz o espaço entre input e botão */
-    width: 100%; /* Ocupa toda a largura disponível */
+    width: 80%; /* Ocupa toda a largura disponível */
     padding-right: 0; /* Remove o padding direito */
   }
 

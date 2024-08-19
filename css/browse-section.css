@@ -27,24 +27,23 @@
 }
 
 
-/* Estilos padrões para a seção */
 .browse-style-container {
-  background-color: white; /* Cor de fundo branca */
-  width: 100%; /* Largura total */
-  min-height: 100vh; /* Altura mínima da seção para preencher a tela */
-  display: flex; /* Usando flexbox para centralizar o conteúdo */
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
-  padding: 2rem; /* Espaçamento interno */
+  background-color: white;
+  width: 100%; 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
-/* Estilo do contêiner principal da seção */
+
 .browse-style {
-  background-color: #F0F0F0; /* Cor de fundo cinza claro */
-  border-radius: 15px; /* Bordas arredondadas */
-  max-width: 1200px; /* Largura máxima */
-  width: 100%; /* Largura total */
-  padding: 40px 20px; /* Espaçamento interno */
+  background-color: #F0F0F0; 
+  border-radius: 15px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 20px;
   box-sizing: border-box; /* Inclui padding e borda na largura total */
   display: flex; /* Usando flexbox para layout */
   flex-direction: column; /* Alinha itens em coluna */
@@ -60,6 +59,14 @@
   padding: 1rem; /* Espaçamento interno */
 }
 
+.img-title{
+  font-family: "Satoshi";
+  font-size: 2rem;
+  position: absolute;
+  font-weight: bold;
+  z-index: 1000;
+}
+
 /* Estilo do grid de imagens */
 .browse-style-grid {
   display: flex; /* Usa flexbox para layout */
@@ -70,6 +77,7 @@
 
 /* Estilo das linhas de imagens */
 .top-row, .bottom-row {
+  position: relative;
   display: flex; /* Usa flexbox para layout */
   width: 100%; /* Largura total */
   gap: 20px; /* Espaçamento entre itens */
@@ -82,7 +90,6 @@
 .top-row img, .bottom-row img {
   border-radius: 20px; /* Bordas arredondadas */
   object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
 }
 
 /* Tamanhos específicos para as imagens */
@@ -98,6 +105,7 @@
 
 /* Adiciona efeito de zoom e sombra nas imagens ao passar o mouse */
 .top-row img:hover, .bottom-row img:hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para zoom e sombra */
   transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra mais pronunciada no hover */
 }

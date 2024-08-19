@@ -27,73 +27,73 @@
 }
 
 
-.promo {
-  background-color: black; /* Define a cor de fundo */
-  width: 100%; /* Faz com que a largura ocupe 100% do elemento pai */
-  color: white; /* Define a cor do texto */
-  text-decoration: none; /* Remove sublinhado dos links */
-  padding: 10px 0; /* Adiciona espaçamento vertical (10px acima e abaixo) */
+.promo-container {
+  background-color: black; 
+  width: 100%; 
+  color: white; 
+  text-decoration: none;
+  padding: 10px 0;
 }
 
-.promo-container {
-  max-width: 1440px; /* Define a largura máxima para centralizar o conteúdo */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  padding: 0 6.5rem; /* Adiciona espaçamento lateral */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
-  position: relative; /* Permite posicionar elementos filhos de forma absoluta */
+.promo {
+  max-width: 1440px; 
+  margin: 0 auto; 
+  padding: 0 6.5rem;
+  box-sizing: border-box; 
+  position: relative;
 }
 
 .promo-content {
-  display: flex; /* Usa flexbox para o layout */
-  align-items: center; /* Alinha verticalmente o conteúdo */
-  width: 100%; /* Ocupa toda a largura disponível */
-  position: relative; /* Permite posicionar o span de forma absoluta dentro */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
 
 .promo-content h2 {
-  font-family: "Satoshi"; /* Define a fonte do texto */
-  font-weight: 400; /* Define o peso da fonte */
-  margin: 0; /* Remove margens para ajuste do alinhamento */
-  font-size: 1rem; /* Define o tamanho da fonte */
-  text-align: center; /* Centraliza o texto dentro do h2 */
-  flex: 1; /* Permite que o h2 ocupe o espaço disponível */
-  margin-right: 70px; /* Espaçamento à direita para o span */
+  font-family: "Satoshi";
+  font-weight: 400; 
+  margin: 0; 
+  font-size: 1rem; 
+  text-align: center; 
+  flex: 1; 
+  margin-right: 70px; 
 }
 
 .promo-content a {
-  color: #ffffff; /* Cor dos links dentro do h2 */
-  text-decoration: underline; /* Sublinha o link */
+  color: #ffffff; 
+  text-decoration: underline;
 }
 
 .promo-content span {
-  font-size: 1rem; /* Define o tamanho da fonte do span */
-  cursor: pointer; /* Mostra um cursor de ponteiro ao passar o mouse */
-  border-radius: 50%; /* Torna o span circular */
-  width: 30px; /* Define a largura do span */
-  height: 30px; /* Define a altura do span */
-  display: flex; /* Usa flexbox para o layout interno */
-  align-items: center; /* Alinha verticalmente o conteúdo dentro do span */
-  justify-content: center; /* Alinha horizontalmente o conteúdo dentro do span */
-  position: absolute; /* Remove o span do fluxo normal do layout */
-  right: 20px; /* Alinha o span com o ícone de login do header */
+  font-size: 1rem; 
+  cursor: pointer;
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  position: absolute; 
+  right: 20px;
 }
 
 /* Ajustes para telas pequenas */
 @media (max-width: 768px) {
-  .promo-container {
-      padding: 0 1rem; /* Reduz o espaçamento lateral para telas pequenas */
+  .promo {
+      padding: 0 1rem; 
   }
 
   .promo-content {
-      justify-content: center; /* Centraliza o conteúdo */
+      justify-content: center; 
   }
 
   .promo-content h2 {
-      margin-right: 0; /* Remove o espaçamento à direita */
-      font-size: 0.8rem; /* Reduz o tamanho da fonte para telas pequenas */
+      margin-right: 0; 
+      font-size: 0.8rem;
   }
 
   .promo-content span {
-      display: none; /* Esconde o span em telas pequenas */
+      display: none;
   }
 }

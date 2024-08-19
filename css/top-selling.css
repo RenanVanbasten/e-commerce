@@ -27,46 +27,43 @@
 }
 
 
-/* Estilo para a seção new-arrivals */
 .top-selling {
   width: 100%;
   background-color: white;
-  padding: 20px;
+  padding: 40px;
+  text-align: center; 
 }
 
-/* Estilo do título na seção new-arrivals */
+
 .top-selling h1 {
   font-family: "Integral CF";
   font-size: 2.5rem;
   margin-bottom: 40px;
 }
 
-/* Estilo para o contêiner das cards */
+
 .cards-container {
-  max-width: 1200px; /* Define a largura máxima do conteúdo do contêiner */
-  margin: 0 auto; /* Centraliza horizontalmente */
+  max-width: 1200px; 
+  margin: 0 auto; 
   display: flex;
-  justify-content: space-between; /* Espaça uniformemente os itens dentro do contêiner */
-  align-items: center; /* Alinha verticalmente o conteúdo */
-  width: 100%; /* Ocupa toda a largura disponível */
-  padding: 0; /* Remove padding lateral */
-  box-sizing: border-box; /* Inclui padding e borda na largura total */
-  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: space-between;
+  align-items: center; 
+  padding: 0;
+  box-sizing: border-box; 
+  gap: 20px; 
 }
 
-/* Estilo para os cards */
 .card {
   width: 220px;
   padding: 20px;
-  margin: 0; /* Remove a margem para encostar os cards nas bordas laterais */
+  margin: 0; 
 }
 
-/* Estilo para a imagem dentro dos cards */
 .card-image {
   width: 100%;
-  height: 150px; /* Altura fixa para as imagens */
+  height: 150px;
   overflow: hidden;
-  background-color: #f2f0f1; /* Cor de fundo da imagem */
+  background-color: #f2f0f1; 
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -77,32 +74,29 @@
   width: auto;
   height: 100%;
   max-width: 100%;
-  object-fit: cover; /* Garante que a imagem se ajuste ao contêiner */
+  object-fit: cover; 
 }
 
-/* Estilo para o conteúdo do card */
 .card-content {
   text-align: left;
   font-family: "Satoshi";
-  padding: 0; /* Remove o preenchimento para reduzir o espaço */
-  margin: 0; /* Remove a margem para reduzir o espaço */
+  padding: 0; 
+  margin: 0; 
 }
 
-/* Estilo para o nome do produto */
 .product-name {
   font-size: 0.7rem;
-  margin-bottom: 5px; /* Reduz o espaço abaixo do nome do produto */
-  font-weight: bold; /* Mesmo peso de fonte que o preço */
-  white-space: nowrap; /* Impede quebras de linha no nome do produto */
-  overflow: hidden; /* Oculta texto que ultrapassa o contêiner */
-  text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
+  margin-bottom: 5px;
+  font-weight: bold; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
-/* Estilo para a classificação do produto */
 .rating {
   display: flex;
   align-items: center;
-  margin-bottom: 5px; /* Reduz o espaço abaixo da classificação */
+  margin-bottom: 5px; 
 }
 
 .stars {
@@ -116,14 +110,13 @@
   color: #666;
 }
 
-/* Estilo para o preço do produto */
 .price {
   font-size: 1.1rem;
   font-weight: bold;
   display: flex;
   align-items: center;
-  gap: 10px; /* Espaçamento entre os elementos de preço */
-  margin-top: 5px; /* Adiciona um pequeno espaço acima do preço */
+  gap: 10px; 
+  margin-top: 5px; 
 }
 
 .current-price {
@@ -135,75 +128,38 @@
   text-decoration: line-through;
 }
 
-/* Estilo para o desconto do produto */
 .discount {
   background-color: #f2f0f1;
   color: red;
   padding: 5px 10px;
-  border-radius: 20px; /* Ajustado para melhor aparência */
+  border-radius: 20px; 
   text-decoration: none;
-  font-size: 0.5rem; /* Ajustado para ser mais legível */
-}
-
-/* Estilo para a seção new-arrivals para centralizar o botão */
-.top-selling {
-  text-align: center; /* Garante que o botão fique centralizado horizontalmente */
+  font-size: 0.5rem;
 }
 
 .top-selling button {
   width: 10%;
-  background-color: white; /* Cor de fundo branca */
-  border: 1px solid #ccc; /* Borda fina e cinza claro */
-  border-radius: 30px; /* Borda arredondada para melhor aparência */
-  padding: 10px 20px; /* Adiciona preenchimento interno */
-  font-size: 1rem; /* Tamanho da fonte */
-  color: black; /* Cor do texto */
-  cursor: pointer; /* Altera o cursor para indicar que é clicável */
-  margin-top: 20px; /* Espaçamento acima do botão */
-  display: inline-block; /* Faz o botão se ajustar ao conteúdo e se comportar como um bloco */
-  text-align: center; /* Centraliza o texto dentro do botão */
+  background-color: white; 
+  border: 1px solid #ccc; 
+  border-radius: 30px;
+  padding: 10px 20px; 
+  font-size: 1rem; 
+  color: black; 
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
   font-family: "Satoshi";
   transition: background-color 0.4s ease;
 }
 
 button:hover {
-  background-color: #9da8b5; /* Cor de fundo quando o botão é hover */
+  background-color: #9da8b5;
 }
 
-/* Media Queries para responsividade */
 @media (max-width: 768px) {
-  .top-selling {
-    max-width: 768px; /* Define a largura máxima do conteúdo do contêiner */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    padding: 20px; /* Garante o espaçamento interno */
-    box-sizing: border-box; /* Inclui padding e borda na largura total */
-  }
-
-  .top-selling h1 {
-    font-size: 2rem; /* Ajuste o tamanho conforme necessário */
-    text-align: center; /* Centraliza o título */
-    margin-bottom: 20px; /* Ajusta o espaço abaixo do título */
-  }
-
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os cards se movam para a linha seguinte */
-    justify-content: center; /* Centraliza os cards horizontalmente */
-    gap: 20px; /* Espaçamento entre os cards */
-  }
-
-  .card {
-    width: calc(50% - 20px); /* Define a largura dos cards para metade da largura do contêiner menos a margem */
-    margin-bottom: 20px; /* Adiciona espaçamento entre os cards */
-  }
-
-  /* Exibe apenas os primeiros dois cards */
-  .card-hidden {
-    display: none; /* Oculta todos os cards adicionais */
-  }
-
   .top-selling button {
-    width: 100%; /* Faz o botão ocupar toda a largura disponível */
-    margin-top: 20px; /* Espaçamento acima do botão */
+    width: 100%; 
+    margin-top: 20px; 
   }
 }

@@ -113,7 +113,7 @@
     align-items: center; /* Centraliza o conteúdo horizontalmente */
     padding: 20px; /* Ajusta o padding */
     margin-top: -145px; /* Ajusta a margem superior para sobreposição */
-    width: 430px;
+    width: 90%;
   }
 
   .subscribe h1 {
@@ -127,7 +127,6 @@
   .subscribe-content {
     align-items: center; /* Centraliza os itens horizontalmente */
     gap: 5px; /* Reduz o espaço entre input e botão */
-    width: 80%; /* Ocupa toda a largura disponível */
     padding-right: 0; /* Remove o padding direito */
   }
 

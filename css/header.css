@@ -184,6 +184,19 @@ input {
   display: none;
 }
 
+
+ul .drop-down{
+  list-style: none;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+li.drop:hover .drop-down{
+  display: block;
+}
+
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;

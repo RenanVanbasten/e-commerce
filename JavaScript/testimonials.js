@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const carousel = document.querySelector('.carousel');
     const controls = document.querySelectorAll('.carousel-control');
     const cards = Array.from(carousel.querySelectorAll('.cartao'));
-    const cardWidth = cards[0].offsetWidth + 20;
+    const cardWidth = cards[0].offsetWidth + 25;
     let scrollAmount = 0;
     carousel.innerHTML += carousel.innerHTML;
 
